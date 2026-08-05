@@ -1,379 +1,1820 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yuvathy Technologies</title>
+    <!-- ===============================
+         BASIC SEO
+    ================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Yuvathy Technologies | Building Software That Powers Modern Businesses</title>
 
-<style>
+    <meta name="description"
+        content="Yuvathy Technologies builds modern software products, SaaS platforms, enterprise applications, cloud solutions and digital experiences that help businesses innovate and grow.">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+    <meta name="keywords"
+        content="Software Company, SaaS, Enterprise Software, Cloud Solutions, Web Development, Mobile Apps, EstateOS">
 
-body{
-font-family:'Inter',sans-serif;
-scroll-behavior:smooth;
-color:#333;
-}
+    <meta name="author" content="Yuvathy Technologies">
 
-/* NAVBAR */
+    <meta name="theme-color" content="#09090b">
 
-nav{
-position:sticky;
-top:0;
-background:white;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
-z-index:1000;
-}
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yuvathy Technologies">
+    <meta property="og:description"
+        content="Building software that powers modern businesses.">
 
-.nav-container{
-max-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-}
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.logo{
-font-size:20px;
-font-weight:700;
-color:#0077cc;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-.nav-menu{
-display:flex;
-gap:25px;
-}
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 
-.nav-menu a{
-text-decoration:none;
-color:#0077cc;
-font-weight:600;
-padding:5px 10px;
-border-radius:5px;
-transition:0.3s;
-}
+    <link rel="stylesheet" href="css/style.css">
 
-.nav-menu a.active{
-background:#0077cc;
-color:white;
-}
-
-.hamburger{
-font-size:26px;
-cursor:pointer;
-display:none;
-}
-
-/* HERO */
-
-header{
-background:linear-gradient(270deg,#0077cc,#00bfff,#00ccff,#0077cc);
-background-size:800% 800%;
-animation:gradientBG 15s ease infinite;
-color:white;
-text-align:center;
-padding:120px 20px;
-}
-
-@keyframes gradientBG{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-header h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-header p{
-font-size:1.3rem;
-margin-bottom:30px;
-}
-
-.btn{
-background:white;
-color:#0077cc;
-padding:14px 30px;
-border-radius:30px;
-font-weight:600;
-text-decoration:none;
-transition:0.3s;
-}
-
-.btn:hover{
-background:linear-gradient(45deg,#00bfff,#0077cc);
-color:white;
-transform:translateY(-3px);
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* SECTIONS */
-
-section{
-max-width:1000px;
-margin:auto;
-padding:80px 20px;
-opacity:0;
-transform:translateY(40px);
-transition:0.8s;
-}
-
-section.visible{
-opacity:1;
-transform:translateY(0);
-}
-
-h2{
-text-align:center;
-color:#0077cc;
-margin-bottom:50px;
-font-size:2rem;
-}
-
-/* SERVICES */
-
-.services{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.service-card{
-background:#f0f8ff;
-padding:30px;
-border-radius:15px;
-flex:1 1 250px;
-text-align:center;
-transition:0.3s;
-}
-
-.service-card:hover{
-transform:translateY(-10px);
-}
-
-.service-card h3{
-color:#0077cc;
-margin-bottom:15px;
-}
-
-/* ABOUT */
-
-.about p{
-text-align:center;
-max-width:700px;
-margin:auto;
-line-height:1.7;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.contact a{
-color:#0077cc;
-font-weight:600;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:20px;
-background:#f5f5f5;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hamburger{
-display:block;
-}
-
-.nav-menu{
-position:absolute;
-top:60px;
-right:0;
-background:white;
-width:200px;
-flex-direction:column;
-align-items:center;
-padding:20px;
-gap:20px;
-display:none;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
-}
-
-.nav-menu.show{
-display:flex;
-}
-
-header h1{
-font-size:2.2rem;
-}
-
-.services{
-flex-direction:column;
-}
-
-}
-
-</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+    <!--==============================
+        SCROLL PROGRESS
+    ==============================-->
 
-<nav>
-<div class="nav-container">
+    <div class="scroll-progress"></div>
 
-<div class="logo">Yuvathy Technologies</div>
+    <!--==============================
+        CURSOR GLOW
+    ==============================-->
 
-<div class="hamburger" id="hamburger">☰</div>
+    <div class="cursor-glow"></div>
 
-<div class="nav-menu" id="navMenu">
-<a href="#hero" class="nav-link">Home</a>
-<a href="#services" class="nav-link">Services</a>
-<a href="#about" class="nav-link">About</a>
-<a href="#contact" class="nav-link">Contact</a>
-</div>
+    <!--==============================
+        BACKGROUND
+    ==============================-->
 
-</div>
-</nav>
+    <div class="aurora-bg"></div>
 
-<!-- HERO -->
+    <div class="grid-overlay"></div>
 
-<header id="hero">
-<h1>Yuvathy Technologies</h1>
-<p>IT Services • SaaS Product Development • Digital Marketing</p>
-<a href="#contact" class="btn">Get in Touch</a>
-</header>
+    <!--==============================
+        HEADER
+    ==============================-->
 
-<!-- SERVICES -->
+    <header id="header">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+
+                <span class="logo-icon">Y</span>
+
+                <span class="logo-text">
+                    Yuvathy Technologies
+                </span>
+
+            </a>
+
+            <nav class="navbar">
+
+                <ul class="nav-links">
+
+                    <li><a href="#hero">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#products">Products</a></li>
+
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#tech">Technologies</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#contact" class="btn nav-btn">
+
+                Let's Talk
+
+            </a>
+
+            <button class="menu-toggle">
+
+                <i class="ri-menu-3-line"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!--==============================
+        HERO
+    ==============================-->
+
+    <main>
+
+        <section id="hero">
+
+            <div class="container hero-grid">
+
+                <!-- LEFT -->
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+
+                        <i class="ri-sparkling-line"></i>
+
+                        Modern Software Company
+
+                    </span>
+
+                    <h1>
+
+                        Building
+                        <span>Software</span>
+                        That Powers
+                        Modern Businesses.
+
+                    </h1>
+
+                    <p>
+
+                        We design and develop scalable software products,
+                        SaaS platforms, enterprise applications and cloud
+                        solutions that help organizations innovate faster
+                        and grow with confidence.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#products" class="btn primary">
+
+                            Explore Products
+
+                        </a>
+
+                        <a href="#contact" class="btn secondary">
+
+                            Contact Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="hero-visual">
+
+                    <!-- Dashboard -->
+
+                    <div class="dashboard">
+
+                        <div class="dashboard-header">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+                        <div class="dashboard-content">
+
+                            <div class="chart-card">
+
+                                <h4>Cloud Analytics</h4>
+
+                                <div class="chart"></div>
+
+                            </div>
+
+                            <div class="mini-cards">
+
+                                <div class="mini-card">
+
+                                    <i class="ri-cloud-line"></i>
+
+                                    Cloud
+
+                                </div>
+
+                                <div class="mini-card">
+
+                                    <i class="ri-cpu-line"></i>
+
+                                    AI
+
+                                </div>
+
+                                <div class="mini-card">
+
+                                    <i class="ri-code-box-line"></i>
+
+                                    APIs
+
+                                </div>
+
+                                <div class="mini-card">
+
+                                    <i class="ri-database-2-line"></i>
+
+                                    Data
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Cards -->
+
+                    <div class="floating-card card-1">
+
+                        <i class="ri-rocket-line"></i>
+
+                        Fast Delivery
+
+                    </div>
+
+                    <div class="floating-card card-2">
+
+                        <i class="ri-shield-check-line"></i>
+
+                        Secure Solutions
+
+                    </div>
+
+                    <div class="floating-card card-3">
+
+                        <i class="ri-cloud-line"></i>
+
+                        Cloud Ready
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==============================
+            STATS
+        ==============================-->
+
+        <section id="stats">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <h3>
+
+                            <span class="counter"
+                                  data-target="15">0</span>+
+
+                        </h3>
+
+                        <p>
+
+                            Projects Delivered
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3>
+
+                            <span class="counter"
+                                  data-target="5">0</span>+
+
+                        </h3>
+
+                        <p>
+
+                            Software Products
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3>
+
+                            <span class="counter"
+                                  data-target="99">0</span>%
+
+                        </h3>
+
+                        <p>
+
+                            Client Satisfaction
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3>
+
+                            24×7
+
+                        </h3>
+
+                        <p>
+
+                            Technical Support
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===== Part 1B starts here ===== -->
+      
+      <!-- =======================================
+ABOUT
+======================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                About Us
+
+            </span>
+
+            <h2>
+
+                We Build Digital Products That
+                Solve Real Business Problems.
+
+            </h2>
+
+            <p>
+
+                Yuvathy Technologies is a modern software company focused on
+                building scalable SaaS products, enterprise applications and
+                custom digital solutions. We combine design, engineering and
+                cloud technologies to help businesses innovate, automate and
+                grow.
+
+            </p>
+
+        </div>
+
+        <div class="about-grid">
+
+            <article class="about-card">
+
+                <div class="about-icon">
+
+                    <i class="ri-lightbulb-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Innovation
+
+                </h3>
+
+                <p>
+
+                    We build solutions using modern technologies and
+                    forward-thinking engineering practices.
+
+                </p>
+
+            </article>
+
+            <article class="about-card">
+
+                <div class="about-icon">
+
+                    <i class="ri-flashlight-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Performance
+
+                </h3>
+
+                <p>
+
+                    Fast, scalable and optimized applications built for
+                    long-term growth.
+
+                </p>
+
+            </article>
+
+            <article class="about-card">
+
+                <div class="about-icon">
+
+                    <i class="ri-shield-check-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Reliability
+
+                </h3>
+
+                <p>
+
+                    Secure software engineered with maintainability and
+                    stability in mind.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================
+FEATURED PRODUCT
+======================================== -->
+
+<section id="featured-product">
+
+    <div class="container">
+
+        <div class="featured-grid">
+
+            <div class="featured-content">
+
+                <span class="section-tag">
+
+                    Flagship Product
+
+                </span>
+
+                <h2>
+
+                    EstateOS
+
+                </h2>
+
+                <p>
+
+                    EstateOS is a modern real estate management platform
+                    designed for property developers, agencies and brokers.
+                    Manage listings, enquiries, customers and business
+                    operations through one powerful platform.
+
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature-item">
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Property Listings
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Lead Management
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Analytics Dashboard
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Team Collaboration
+
+                    </div>
+
+                </div>
+
+                <div class="featured-buttons">
+
+                    <a href="https://estateos.yuvathy.in"
+                        class="btn primary">
+
+                        Visit EstateOS
+
+                    </a>
+
+                    <a href="#contact"
+                        class="btn secondary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="featured-image">
+
+                <div class="browser-window">
+
+                    <div class="browser-top">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <div class="browser-body">
+
+                        <div class="dashboard-sidebar"></div>
+
+                        <div class="dashboard-main">
+
+                            <div class="dash-row"></div>
+
+                            <div class="dash-row"></div>
+
+                            <div class="dash-row large"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================
+PRODUCTS
+======================================== -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Products
+
+            </span>
+
+            <h2>
+
+                Building a Growing Software Ecosystem
+
+            </h2>
+
+            <p>
+
+                Our vision is to create software products that simplify
+                business operations across industries.
+
+            </p>
+
+        </div>
+
+        <div class="products-grid">
+
+            <article class="product-card active">
+
+                <span class="status live">
+
+                    Live
+
+                </span>
+
+                <h3>
+
+                    EstateOS
+
+                </h3>
+
+                <p>
+
+                    Complete real estate management platform.
+
+                </p>
+
+                <a href="https://estateos.yuvathy.in">
+
+                    Learn More →
+
+                </a>
+
+            </article>
+
+            <article class="product-card">
+
+                <span class="status">
+
+                    Coming Soon
+
+                </span>
+
+                <h3>
+
+                    HRMS
+
+                </h3>
+
+                <p>
+
+                    Employee and workforce management platform.
+
+                </p>
+
+            </article>
+
+            <article class="product-card">
+
+                <span class="status">
+
+                    Coming Soon
+
+                </span>
+
+                <h3>
+
+                    CRM
+
+                </h3>
+
+                <p>
+
+                    Customer relationship management solution.
+
+                </p>
+
+            </article>
+
+            <article class="product-card">
+
+                <span class="status">
+
+                    Coming Soon
+
+                </span>
+
+                <h3>
+
+                    InventoryOS
+
+                </h3>
+
+                <p>
+
+                    Inventory and warehouse management system.
+
+                </p>
+
+            </article>
+
+            <article class="product-card">
+
+                <span class="status">
+
+                    Coming Soon
+
+                </span>
+
+                <h3>
+
+                    AI Suite
+
+                </h3>
+
+                <p>
+
+                    AI-powered productivity and automation tools.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =======================================
+SERVICES
+======================================== -->
 
 <section id="services">
-<h2>Our Services</h2>
 
-<div class="services">
+    <div class="container">
 
-<div class="service-card">
-<h3>SaaS Product Development</h3>
-<p>We build scalable SaaS platforms and web applications for modern businesses.</p>
-</div>
+        <div class="section-header">
 
-<div class="service-card">
-<h3>Digital Marketing</h3>
-<p>Grow your brand with effective social media and online marketing strategies.</p>
-</div>
+            <span class="section-tag">
 
-<div class="service-card">
-<h3>IT Consulting</h3>
-<p>Expert guidance for technology solutions, architecture and product development.</p>
-</div>
+                Our Services
 
-</div>
+            </span>
+
+            <h2>
+
+                End-to-End Software Development Services
+
+            </h2>
+
+            <p>
+
+                From strategy and design to development, deployment and
+                ongoing support, we help businesses build reliable digital
+                solutions that scale.
+
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-code-s-slash-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Custom Software
+
+                </h3>
+
+                <p>
+
+                    Tailor-made business applications designed around your
+                    unique workflow and goals.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-window-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Web Applications
+
+                </h3>
+
+                <p>
+
+                    Fast, responsive and scalable web applications for modern
+                    businesses.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-smartphone-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Mobile Applications
+
+                </h3>
+
+                <p>
+
+                    Cross-platform mobile experiences with performance and
+                    usability in mind.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-cloud-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Cloud Solutions
+
+                </h3>
+
+                <p>
+
+                    Secure, scalable cloud infrastructure and deployment
+                    services.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-links-line"></i>
+
+                </div>
+
+                <h3>
+
+                    API Development
+
+                </h3>
+
+                <p>
+
+                    Robust APIs and third-party integrations for seamless
+                    business connectivity.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-layout-4-line"></i>
+
+                </div>
+
+                <h3>
+
+                    UI / UX Design
+
+                </h3>
+
+                <p>
+
+                    Modern interfaces focused on usability, accessibility and
+                    delightful user experiences.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-cpu-line"></i>
+
+                </div>
+
+                <h3>
+
+                    AI Integration
+
+                </h3>
+
+                <p>
+
+                    Enhance workflows with AI-powered automation, insights and
+                    intelligent assistants.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="ri-customer-service-2-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Support & Maintenance
+
+                </h3>
+
+                <p>
+
+                    Continuous monitoring, updates and long-term support for
+                    your software products.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- ABOUT -->
 
-<section class="about" id="about">
-<h2>About Yuvathy Technologies</h2>
 
-<p>
-We help startups and businesses build modern digital products.  
-From IT services to SaaS platforms and digital marketing solutions,  
-our goal is to help companies grow with technology.
-</p>
+<!-- =======================================
+WHY CHOOSE US
+======================================== -->
+
+<section id="why-us">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Why Choose Us
+
+            </span>
+
+            <h2>
+
+                Technology Built for Growth
+
+            </h2>
+
+            <p>
+
+                We combine engineering excellence with business thinking to
+                create software that delivers measurable value.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <article class="why-card">
+
+                <i class="ri-rocket-line"></i>
+
+                <h3>
+
+                    Fast Delivery
+
+                </h3>
+
+                <p>
+
+                    Agile development processes help us deliver faster without
+                    compromising quality.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <i class="ri-shield-check-line"></i>
+
+                <h3>
+
+                    Secure by Design
+
+                </h3>
+
+                <p>
+
+                    Security, reliability and maintainability are built into
+                    every solution.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <i class="ri-expand-left-right-line"></i>
+
+                <h3>
+
+                    Scalable Architecture
+
+                </h3>
+
+                <p>
+
+                    Software engineered to grow alongside your business.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <i class="ri-flashlight-line"></i>
+
+                <h3>
+
+                    Modern Technologies
+
+                </h3>
+
+                <p>
+
+                    We leverage widely adopted, industry-proven technologies to
+                    build future-ready applications.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <i class="ri-team-line"></i>
+
+                <h3>
+
+                    Collaborative Approach
+
+                </h3>
+
+                <p>
+
+                    We work closely with clients to understand challenges and
+                    deliver practical solutions.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <i class="ri-award-line"></i>
+
+                <h3>
+
+                    Quality First
+
+                </h3>
+
+                <p>
+
+                    Every product is built with attention to performance,
+                    usability and long-term maintainability.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
 
 </section>
 
-<!-- CONTACT -->
 
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
 
-<p>Email: <a href="mailto:yuvathysoft@gmail.com">yuvathysoft@gmail.com</a></p>
-<p>Phone: <a href="tel:+917418177976">7418177976</a></p>
-<p>Location: India</p>
+<!-- =======================================
+OUR VALUES
+======================================== -->
 
-<br>
+<section id="values">
 
-<a href="mailto:yuvathysoft@gmail.com" class="btn">Send Message</a>
+    <div class="container">
+
+        <div class="values-wrapper">
+
+            <div class="values-content">
+
+                <span class="section-tag">
+
+                    Our Values
+
+                </span>
+
+                <h2>
+
+                    Built on Innovation, Trust and Excellence
+
+                </h2>
+
+                <p>
+
+                    We believe great software is created through continuous
+                    learning, transparent collaboration and a relentless focus
+                    on solving real-world problems.
+
+                </p>
+
+            </div>
+
+            <div class="values-list">
+
+                <div class="value-item">
+
+                    <i class="ri-checkbox-circle-fill"></i>
+
+                    Innovation-Driven Culture
+
+                </div>
+
+                <div class="value-item">
+
+                    <i class="ri-checkbox-circle-fill"></i>
+
+                    Customer-Centric Development
+
+                </div>
+
+                <div class="value-item">
+
+                    <i class="ri-checkbox-circle-fill"></i>
+
+                    Transparent Communication
+
+                </div>
+
+                <div class="value-item">
+
+                    <i class="ri-checkbox-circle-fill"></i>
+
+                    Continuous Improvement
+
+                </div>
+
+                <div class="value-item">
+
+                    <i class="ri-checkbox-circle-fill"></i>
+
+                    Long-Term Partnerships
+
+                </div>
+
+                <div class="value-item">
+
+                    <i class="ri-checkbox-circle-fill"></i>
+
+                    Commitment to Quality
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<!-- FOOTER -->
+        <!-- =======================================
+             TECHNOLOGIES
+        ======================================== -->
 
-<footer>
-© 2026 All Rights Reserved. Website by Yuvathy Technologies
-</footer>
+        <section id="tech">
 
-<script>
+            <div class="container">
 
-/* hamburger */
+                <div class="section-header">
 
-const hamburger=document.getElementById("hamburger");
-const navMenu=document.getElementById("navMenu");
+                    <span class="section-tag">
 
-hamburger.addEventListener("click",()=>{
-navMenu.classList.toggle("show");
-});
+                        Technologies
+
+                    </span>
+
+                    <h2>
+
+                        Technologies We Work With
+
+                    </h2>
+
+                    <p>
+
+                        We build software using modern, industry-standard
+                        technologies chosen for performance, scalability and
+                        long-term maintainability.
+
+                    </p>
+
+                </div>
+
+                <div class="tech-grid">
+
+                    <div class="tech-item">
+                        <i class="ri-reactjs-line"></i>
+                        <span>React</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-code-box-line"></i>
+                        <span>Next.js</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-terminal-box-line"></i>
+                        <span>Node.js</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-cup-line"></i>
+                        <span>Java</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-code-line"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-database-2-line"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-database-line"></i>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-cloud-line"></i>
+                        <span>AWS</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-cloudy-line"></i>
+                        <span>Azure</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-box-3-line"></i>
+                        <span>Docker</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-stack-line"></i>
+                        <span>Kubernetes</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <i class="ri-github-line"></i>
+                        <span>GitHub</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-/* scroll animation */
 
-const sections=document.querySelectorAll("section");
+        <!-- =======================================
+             INDUSTRIES
+        ======================================== -->
 
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("visible");
-}
-});
-},{threshold:0.2});
+        <section id="industries">
 
-sections.forEach(section=>{
-observer.observe(section);
-});
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Industries
+
+                    </span>
+
+                    <h2>
+
+                        Solutions Across Multiple Industries
+
+                    </h2>
+
+                    <p>
+
+                        Our technology expertise allows us to build solutions
+                        for diverse business domains.
+
+                    </p>
+
+                </div>
+
+                <div class="industries-grid">
+
+                    <div class="industry-card">
+                        <i class="ri-home-4-line"></i>
+                        <h3>Real Estate</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-heart-pulse-line"></i>
+                        <h3>Healthcare</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-graduation-cap-line"></i>
+                        <h3>Education</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-bank-line"></i>
+                        <h3>Finance</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-store-2-line"></i>
+                        <h3>Retail</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-building-line"></i>
+                        <h3>Manufacturing</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-truck-line"></i>
+                        <h3>Logistics</h3>
+                    </div>
+
+                    <div class="industry-card">
+                        <i class="ri-rocket-2-line"></i>
+                        <h3>Startups</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-/* active nav */
 
-const navLinks=document.querySelectorAll(".nav-link");
+        <!-- =======================================
+             PROCESS
+        ======================================== -->
 
-window.addEventListener("scroll",()=>{
+        <section id="process">
 
-let scrollPos=window.scrollY+150;
+            <div class="container">
 
-navLinks.forEach(link=>{
+                <div class="section-header">
 
-let section=document.querySelector(link.getAttribute("href"));
+                    <span class="section-tag">
 
-if(
-section.offsetTop<=scrollPos &&
-section.offsetTop+section.offsetHeight>scrollPos
-){
-navLinks.forEach(l=>l.classList.remove("active"));
-link.classList.add("active");
-}
+                        Development Process
 
-});
+                    </span>
 
-});
+                    <h2>
 
-</script>
+                        From Idea to Successful Product
+
+                    </h2>
+
+                </div>
+
+                <div class="process-timeline">
+
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Discover</h3>
+                        <p>Understand business goals and requirements.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Plan</h3>
+                        <p>Define architecture, roadmap and milestones.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Design</h3>
+                        <p>Create intuitive user experiences and interfaces.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Develop</h3>
+                        <p>Build scalable and maintainable software.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <h3>Test</h3>
+                        <p>Ensure quality, security and performance.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">06</div>
+                        <h3>Deploy</h3>
+                        <p>Launch confidently with cloud-ready infrastructure.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =======================================
+             TESTIMONIALS
+        ======================================== -->
+
+        <section id="testimonials">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Testimonials
+
+                    </span>
+
+                    <h2>
+
+                        What Our Clients Say
+
+                    </h2>
+
+                </div>
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial-card">
+
+                        <p>
+
+                            “Yuvathy Technologies helped us transform our
+                            business workflow with a modern, scalable solution.
+                            The team was responsive and highly professional.”
+
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <strong>Property Business Owner</strong>
+
+                            <span>Real Estate Industry</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="testimonial-card">
+
+                        <p>
+
+                            “The quality of development and attention to detail
+                            exceeded our expectations. We appreciated the
+                            transparent communication throughout the project.”
+
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <strong>Startup Founder</strong>
+
+                            <span>Technology Sector</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =======================================
+             FAQ
+        ======================================== -->
+
+        <section id="faq">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        FAQ
+
+                    </span>
+
+                    <h2>
+
+                        Frequently Asked Questions
+
+                    </h2>
+
+                </div>
+
+                <div class="faq-list">
+
+                    <details class="faq-item">
+                        <summary>Do you build custom software?</summary>
+                        <p>Yes. We design and develop custom software tailored to your business requirements and workflow.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Do you offer SaaS product development?</summary>
+                        <p>Absolutely. SaaS product development is one of our core areas of expertise, from MVP to scalable production platforms.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can you maintain existing applications?</summary>
+                        <p>Yes. We provide ongoing maintenance, feature enhancements, performance optimization and technical support.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Do you provide cloud deployment services?</summary>
+                        <p>Yes. We can deploy and manage applications on major cloud platforms with security and scalability best practices.</p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =======================================
+             CTA
+        ======================================== -->
+
+        <section id="cta">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <h2>
+
+                        Ready to Build Your Next Software Product?
+
+                    </h2>
+
+                    <p>
+
+                        Let’s discuss your idea and turn it into a scalable,
+                        high-quality digital solution.
+
+                    </p>
+
+                    <div class="cta-buttons">
+
+                        <a href="#contact" class="btn primary">
+
+                            Start a Project
+
+                        </a>
+
+                        <a href="mailto:hello@yuvathy.in" class="btn secondary">
+
+                            Email Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =======================================
+             CONTACT
+        ======================================== -->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Contact
+
+                    </span>
+
+                    <h2>
+
+                        Let’s Build Something Great Together
+
+                    </h2>
+
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+
+                        <div class="info-item">
+                            <i class="ri-mail-line"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@yuvathy.in</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 XXXXX XXXXX</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="ri-map-pin-line"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bengaluru, Karnataka, India</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form class="contact-form">
+
+                        <input type="text" placeholder="Your Name" required>
+
+                        <input type="email" placeholder="Email Address" required>
+
+                        <input type="text" placeholder="Company (Optional)">
+
+                        <textarea rows="6" placeholder="Tell us about your project" required></textarea>
+
+                        <button type="submit" class="btn primary">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =======================================
+         FOOTER
+    ======================================== -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <h3>Yuvathy Technologies</h3>
+
+                    <p>
+
+                        Building software that powers modern businesses through
+                        innovative products and scalable digital solutions.
+
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Products</h4>
+
+                    <a href="https://estateos.yuvathy.in">EstateOS</a>
+                    <a href="#">HRMS</a>
+                    <a href="#">CRM</a>
+                    <a href="#">InventoryOS</a>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Services</h4>
+
+                    <a href="#services">Software Development</a>
+                    <a href="#services">Web Applications</a>
+                    <a href="#services">Cloud Solutions</a>
+                    <a href="#services">AI Integration</a>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Company</h4>
+
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 Yuvathy Technologies. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
