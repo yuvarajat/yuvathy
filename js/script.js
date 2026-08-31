@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             navbar.classList.toggle("active");
 
+            const isOpen = navbar.classList.contains("active");
+
+            menuBtn.setAttribute("aria-expanded", String(isOpen));
+            menuBtn.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+
             const icon = menuBtn.querySelector("i");
 
             if (icon) {
@@ -34,6 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
             link.addEventListener("click", () => {
 
                 navbar.classList.remove("active");
+
+                menuBtn.setAttribute("aria-expanded", "false");
+                menuBtn.setAttribute("aria-label", "Open navigation");
 
                 const icon = menuBtn.querySelector("i");
 
@@ -289,8 +297,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         anchor.addEventListener("click", function (e) {
 
+            const href = this.getAttribute("href");
+
+            if (!href || href === "#") return;
+
             const target = document.querySelector(
-                this.getAttribute("href")
+                href
             );
 
             if (!target) return;
@@ -335,6 +347,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const topBtn = document.createElement("button");
 
     topBtn.className = "back-to-top";
+    topBtn.type = "button";
+    topBtn.setAttribute("aria-label", "Back to top");
+    topBtn.setAttribute("title", "Back to top");
 
     topBtn.innerHTML = '<i class="ri-arrow-up-line"></i>';
 
