@@ -5640,6 +5640,73 @@ footer{
     }
 }
 
+@media(max-width:768px){
+    .tech-grid,
+    .industries-grid{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:11px;
+        margin-top:0;
+    }
+
+    .tech-item{
+        width:100%;
+        min-width:0;
+        min-height:50px;
+        justify-content:flex-start;
+        padding:12px 13px;
+        border-radius:14px;
+        font-size:.82rem;
+    }
+
+    .tech-item i{
+        flex:0 0 auto;
+        font-size:1.05rem;
+    }
+
+    .industries-grid{
+        align-items:stretch;
+    }
+
+    .industry-card{
+        min-width:0;
+        min-height:108px;
+        padding:16px 10px;
+        display:grid;
+        place-items:center;
+        align-content:center;
+        text-align:center;
+        border-radius:17px;
+    }
+
+    .industry-card i{
+        width:44px;
+        height:44px;
+        margin:0 0 10px;
+        border-radius:12px;
+        font-size:1.08rem;
+    }
+
+    .industry-card h3{
+        max-width:100%;
+        margin:0;
+        font-size:.9rem;
+        line-height:1.25;
+        overflow-wrap:anywhere;
+    }
+}
+
+@media(max-width:380px){
+    .tech-item{
+        padding-inline:10px;
+        font-size:.76rem;
+    }
+
+    .industry-card h3{
+        font-size:.82rem;
+    }
+}
+
 /* Final cascade corrections for the two featured layouts. */
 .hero-visual,
 .dashboard,
