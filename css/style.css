@@ -898,8 +898,6 @@ ANIMATION
     max-width:700px;
 
     margin-bottom:28px;
-
-    letter-spacing:-1px;
 }
 
 .hero-content h1 span{
@@ -1171,8 +1169,6 @@ ANIMATION
     .hero-content h1{
 
         font-size:2.4rem;
-
-        line-height:1.15;
     }
 
     .hero-badge{
@@ -2826,9 +2822,7 @@ section{
 .hero-content h1{
     max-width:660px;
     font-size:clamp(3.4rem,6.3vw,5.4rem);
-    line-height:.98;
     font-weight:800;
-    letter-spacing:-.065em;
     margin-bottom:28px;
 }
 
@@ -4313,7 +4307,7 @@ footer{
   FEATURED PRODUCT CARD
 ====================================*/
 
-.product-card.active{
+.product-card.featured{
 
     border:1px solid rgba(79,70,229,.35);
 
@@ -4323,7 +4317,7 @@ footer{
 
 }
 
-.product-card.active::after{
+.product-card.featured::after{
 
     content:"Featured";
 
@@ -4722,6 +4716,8 @@ footer{
     margin:18px 0 24px;
 
     font-size:clamp(2rem,4vw,3rem);
+
+    line-height:normal;
 
 }
 
@@ -5641,6 +5637,151 @@ footer{
 }
 
 @media(max-width:768px){
+    .products-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:11px;
+        margin-top:0;
+    }
+
+    .product-card{
+        min-width:0;
+        min-height:166px;
+        padding:17px 13px;
+        border-radius:17px;
+    }
+
+    .product-card .status{
+        margin-bottom:12px;
+        padding:6px 9px;
+        font-size:.6rem;
+    }
+
+    .product-card h3{
+        margin-bottom:8px;
+        font-size:1rem;
+        line-height:1.25;
+        overflow-wrap:anywhere;
+    }
+
+    .product-card p{
+        margin-bottom:0;
+        font-size:.74rem;
+        line-height:1.5;
+    }
+
+    .product-card.featured{
+        grid-column:1 / -1;
+        min-height:188px;
+        padding:22px 20px;
+        background:linear-gradient(145deg,rgba(89,82,230,.22),rgba(67,197,215,.07));
+        border-color:rgba(116,108,255,.5);
+        box-shadow:0 22px 52px rgba(66,57,207,.22),inset 0 1px 0 rgba(255,255,255,.07);
+    }
+
+    .product-card.featured h3{
+        font-size:1.42rem;
+    }
+
+    .product-card.featured p{
+        max-width:400px;
+        font-size:.82rem;
+    }
+
+    .product-card.featured a{
+        margin-top:15px;
+        font-size:.82rem;
+    }
+
+    .product-card.featured::after{
+        top:17px;
+        font-size:.6rem;
+    }
+
+    .product-card:last-child{
+        grid-column:1 / -1;
+        min-height:0;
+        padding:18px;
+    }
+
+    .about-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:11px;
+    }
+
+    .about-card{
+        min-width:0;
+        min-height:220px;
+        padding:18px 14px;
+        border-radius:17px;
+    }
+
+    .about-card .about-icon{
+        width:46px;
+        height:46px;
+        margin-bottom:14px;
+        border-radius:12px;
+        font-size:1.12rem;
+    }
+
+    .about-card h3{
+        margin-bottom:9px;
+        font-size:1rem;
+    }
+
+    .about-card p{
+        font-size:.78rem;
+        line-height:1.55;
+    }
+
+    .about-card:last-child{
+        grid-column:1 / -1;
+        min-height:0;
+        display:grid;
+        grid-template-columns:46px minmax(0,1fr);
+        grid-template-rows:auto auto;
+        column-gap:14px;
+        align-items:start;
+        padding:18px;
+    }
+
+    .about-card:last-child .about-icon{
+        grid-row:1 / span 2;
+        margin:0;
+    }
+
+    .about-card:last-child h3{
+        margin:1px 0 6px;
+    }
+
+    .about-card:last-child p{
+        margin:0;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:11px;
+    }
+
+    .stat-card{
+        min-width:0;
+        min-height:112px;
+        padding:18px 10px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        border-radius:17px;
+    }
+
+    .stat-card h3{
+        margin-bottom:6px;
+        font-size:1.85rem;
+    }
+
+    .stat-card p{
+        font-size:.78rem;
+        line-height:1.35;
+    }
+
     .tech-grid,
     .industries-grid{
         display:grid;
@@ -5694,9 +5835,93 @@ footer{
         line-height:1.25;
         overflow-wrap:anywhere;
     }
+
+    .services-grid,
+    .why-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:11px;
+        margin-top:0;
+        align-items:stretch;
+    }
+
+    .service-card,
+    .why-card{
+        min-width:0;
+        min-height:196px;
+        padding:17px 13px;
+        border-radius:17px;
+    }
+
+    .service-icon,
+    .why-card i{
+        width:44px;
+        height:44px;
+        margin-bottom:13px;
+        border-radius:12px;
+        font-size:1.12rem;
+    }
+
+    .service-card h3,
+    .why-card h3{
+        margin-bottom:8px;
+        font-size:.94rem;
+        line-height:1.28;
+        overflow-wrap:anywhere;
+    }
+
+    .service-card p,
+    .why-card p{
+        margin:0;
+        font-size:.72rem;
+        line-height:1.5;
+    }
+
+    .why-card{
+        min-height:184px;
+    }
 }
 
 @media(max-width:380px){
+    .product-card{
+        min-height:158px;
+        padding-inline:11px;
+    }
+
+    .product-card.featured{
+        min-height:180px;
+        padding-inline:18px;
+    }
+
+    .product-card h3{
+        font-size:.92rem;
+    }
+
+    .product-card p{
+        font-size:.7rem;
+    }
+
+    .about-card{
+        min-height:214px;
+        padding-inline:12px;
+    }
+
+    .about-card p{
+        font-size:.72rem;
+    }
+
+    .stat-card{
+        min-height:104px;
+        padding-inline:8px;
+    }
+
+    .stat-card h3{
+        font-size:1.65rem;
+    }
+
+    .stat-card p{
+        font-size:.72rem;
+    }
+
     .tech-item{
         padding-inline:10px;
         font-size:.76rem;
@@ -5704,6 +5929,26 @@ footer{
 
     .industry-card h3{
         font-size:.82rem;
+    }
+
+    .service-card,
+    .why-card{
+        min-height:190px;
+        padding-inline:11px;
+    }
+
+    .service-card h3,
+    .why-card h3{
+        font-size:.86rem;
+    }
+
+    .service-card p,
+    .why-card p{
+        font-size:.68rem;
+    }
+
+    .why-card{
+        min-height:178px;
     }
 }
 
