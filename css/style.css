@@ -6658,9 +6658,8 @@ section{
     background:rgba(255,255,255,.035);
 }
 
-.service-faq .faq-question{
-    width:100%;
-    text-align:left;
+.service-faq .faq-item summary{
+    color:#F1F5FB;
 }
 
 .service-page-cta{
@@ -6769,37 +6768,6 @@ section{
 
     .delivery-card{
         min-height:0;
-    }
-}
-
-@media(max-width:768px){
-    #services .featured-service-card{
-        grid-column:1 / -1;
-        min-height:0;
-        display:grid;
-        grid-template-columns:44px minmax(0,1fr);
-        grid-template-rows:auto auto auto;
-        column-gap:14px;
-        align-items:start;
-        padding:18px;
-    }
-
-    #services .featured-service-card .service-icon{
-        grid-row:1 / span 3;
-        margin:0;
-    }
-
-    #services .featured-service-card h3{
-        margin:0 0 5px;
-    }
-
-    #services .featured-service-card p{
-        margin:0;
-    }
-
-    #services .featured-service-card .service-card-link{
-        margin-top:8px;
-        font-size:.76rem;
     }
 }
 
