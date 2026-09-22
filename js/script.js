@@ -253,6 +253,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 i.classList.remove("active");
 
+                const question = i.querySelector(".faq-question");
+
+                if (question) question.setAttribute("aria-expanded", "false");
+
                 const a = i.querySelector(".faq-answer");
 
                 if (a) a.style.maxHeight = null;
@@ -262,6 +266,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!isOpen) {
 
                 item.classList.add("active");
+
+                button.setAttribute("aria-expanded", "true");
 
                 answer.style.maxHeight =
                     answer.scrollHeight + "px";
