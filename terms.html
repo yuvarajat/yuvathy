@@ -15,53 +15,52 @@
     <title>Terms of Use | Yuvathy Technologies</title>
     <meta name="description" content="Terms governing access to and use of the Yuvathy Technologies website.">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#060A14">
+    <meta name="theme-color" content="#030303">
     <link rel="canonical" href="https://yuvathy.in/terms.html">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="alternate icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/pages.css">
 </head>
 
 <body class="legal-page">
-    <div class="scroll-progress"></div>
-    <div class="aurora-bg"></div>
-    <div class="grid-overlay"></div>
-
-    <header id="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo" aria-label="Yuvathy Technologies home">
-                <img class="logo-icon" src="assets/yuvathy-symbol.png" alt="" width="48" height="48">
-                <span class="logo-text" aria-hidden="true">
-                    <span class="logo-name">Yuvathy</span>
-                    <span class="logo-kicker">Technologies</span>
-                </span>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <div class="container nav-island">
+            <a href="/" class="brand" aria-label="Yuvathy Technologies home">
+                <img src="/assets/yuvathy-symbol.png" alt="" width="35" height="35">
+                <span><span class="brand-name">yuvathy</span><span class="brand-kicker">Technologies</span></span>
             </a>
-            <nav class="navbar" id="primary-navigation" aria-label="Primary navigation">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="/#services">What we do</a>
+                <a href="/#products">Our product</a>
+                <a href="/#about">Who we are</a>
+                <a href="/#process">How we work</a>
+                <a href="/#careers">Careers</a>
             </nav>
-            <a href="index.html" class="btn nav-btn">Back to Home</a>
-            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-                <i class="ri-menu-3-line"></i>
-            </button>
+            <a href="/#contact" class="button nav-contact">Let’s talk <span class="arrow" aria-hidden="true">↗</span></a>
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation" type="button"><span></span><span></span></button>
         </div>
     </header>
+    <nav class="mobile-menu" id="mobile-navigation" aria-label="Mobile navigation" inert>
+        <a href="/#services" style="--i:1">What we do</a>
+        <a href="/#products" style="--i:2">Our product</a>
+        <a href="/#about" style="--i:3">Who we are</a>
+        <a href="/#process" style="--i:4">How we work</a>
+        <a href="/#careers" style="--i:5">Careers</a>
+        <a href="/#contact" style="--i:6">Let’s talk ↗</a>
+        <p>Bengaluru, India · hello@yuvathy.in</p>
+    </nav>
 
-    <main class="legal-main">
+    <main class="legal-main" id="main">
         <div class="container">
-            <div class="legal-hero">
-                <span class="section-tag">Legal</span>
+            <div class="legal-hero reveal">
+                <span class="eyebrow">Legal</span>
                 <h1>Terms of Use</h1>
                 <p>These terms govern access to the Yuvathy Technologies website. Project work and paid services are governed by the separate agreement or proposal accepted for that engagement.</p>
-                <span class="legal-updated"><i class="ri-calendar-line"></i> Effective 1 September 2026</span>
+                <span class="legal-updated">Effective 1 September 2026</span>
             </div>
 
             <div class="legal-layout">
@@ -69,20 +68,23 @@
                     <span>On this page</span>
                     <a href="#acceptance">Acceptance</a>
                     <a href="#website-use">Website use</a>
+                    <a href="#services">Services and proposals</a>
                     <a href="#intellectual-property">Intellectual property</a>
+                    <a href="#third-parties">Third-party links and services</a>
                     <a href="#disclaimers">Disclaimers</a>
                     <a href="#liability">Liability</a>
+                    <a href="#changes">Changes and availability</a>
                     <a href="#law">Governing law</a>
                 </aside>
 
                 <article class="legal-document">
-                    <section id="acceptance">
+                    <section id="acceptance" class="reveal">
                         <h2>1. Acceptance of these terms</h2>
                         <p>By accessing or using this website, you agree to these Terms of Use and our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please do not use the website.</p>
                         <p>You must be legally capable of entering into these terms. If you use the website for an organisation, you represent that you have authority to act for that organisation.</p>
                     </section>
 
-                    <section id="website-use">
+                    <section id="website-use" class="reveal">
                         <h2>2. Permitted website use</h2>
                         <p>You may use this website to learn about Yuvathy Technologies, evaluate our services and products, and contact us for legitimate business purposes.</p>
                         <p>You must not:</p>
@@ -95,41 +97,41 @@
                         </ul>
                     </section>
 
-                    <section id="services">
+                    <section id="services" class="reveal">
                         <h2>3. Services and proposals</h2>
                         <p>Website descriptions are general information, not a binding offer or guarantee. Scope, deliverables, pricing, timelines, warranties, support and ownership for a project will be set out in a separate written proposal, statement of work or agreement.</p>
                         <p>References to planned or developing products are informational and may change. Availability may depend on technical, commercial or regulatory considerations.</p>
                     </section>
 
-                    <section id="intellectual-property">
+                    <section id="intellectual-property" class="reveal">
                         <h2>4. Intellectual property</h2>
                         <p>Unless stated otherwise, Yuvathy Technologies or its licensors own the website design, brand elements, text, graphics, software and other website content. You may view and make reasonable personal or internal-business use of the website, but may not reproduce, publish, modify, sell or create derivative works from it without permission.</p>
                         <p>Client deliverables and pre-existing intellectual property are governed by the applicable project agreement.</p>
                     </section>
 
-                    <section id="third-parties">
+                    <section id="third-parties" class="reveal">
                         <h2>5. Third-party links and services</h2>
                         <p>The website may link to products, services or websites operated by others. Those services are governed by their own terms and privacy practices. We are not responsible for third-party content, availability or actions merely because a link appears here.</p>
                     </section>
 
-                    <section id="disclaimers">
+                    <section id="disclaimers" class="reveal">
                         <h2>6. Disclaimers</h2>
                         <p>The website is provided on an “as available” basis for general information. To the extent permitted by law, we do not warrant that every statement will always be complete, current or error-free, or that access will be uninterrupted or free from harmful components.</p>
                         <p>Nothing on this website is legal, financial or other regulated professional advice.</p>
                     </section>
 
-                    <section id="liability">
+                    <section id="liability" class="reveal">
                         <h2>7. Limitation of liability</h2>
                         <p>To the maximum extent permitted by applicable law, Yuvathy Technologies will not be liable for indirect, incidental, special, consequential or punitive loss arising solely from use of, or inability to use, this informational website.</p>
                         <p>Nothing in these terms excludes or limits liability that cannot lawfully be excluded. Liability connected with paid services is addressed in the relevant project agreement.</p>
                     </section>
 
-                    <section id="changes">
+                    <section id="changes" class="reveal">
                         <h2>8. Changes and availability</h2>
                         <p>We may update the website or these terms from time to time. The effective date above identifies the current version. We may suspend or change website features where reasonably necessary for maintenance, security or business reasons.</p>
                     </section>
 
-                    <section id="law">
+                    <section id="law" class="reveal">
                         <h2>9. Governing law and contact</h2>
                         <p>These website terms are governed by the laws of India. Subject to applicable law, courts with jurisdiction in Bengaluru, Karnataka will have jurisdiction over disputes relating to these terms.</p>
                         <p>Questions about these terms can be sent to <a href="mailto:hello@yuvathy.in">hello@yuvathy.in</a>.</p>
@@ -140,23 +142,18 @@
         </div>
     </main>
 
-    <footer id="footer">
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-bottom">
-                <p>© 2026 Yuvathy Technologies. All Rights Reserved.</p>
-                <div class="legal-footer-links">
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="cookies.html">Cookies</a>
-                    <a href="https://www.linkedin.com/company/yuvathy-technologies/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-                    <a href="https://www.instagram.com/yuvathy.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-                    <a href="https://wa.me/917418177976" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            <div class="footer-top">
+                <div class="footer-brand"><a href="/" class="brand" aria-label="Yuvathy Technologies home"><img src="/assets/yuvathy-symbol.png" alt="" width="35" height="35"><span><span class="brand-name">yuvathy</span><span class="brand-kicker">Technologies</span></span></a><p>Thoughtful software.<br>Practical support. A human approach.</p></div>
+                <div class="footer-links">
+                    <div><small>Explore</small><a href="/#services">What we do</a><a href="https://estateos.yuvathy.in" target="_blank" rel="noopener noreferrer">EstateOS ↗</a><a href="/services/accounting-compliance/">Business support</a></div>
+                    <div><small>Get to know us</small><a href="/#about">About Yuvathy</a><a href="/#careers">Careers</a><a href="https://www.linkedin.com/company/yuvathy-technologies/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/yuvathy.in/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
                 </div>
             </div>
+            <div class="footer-bottom"><span>© 2026 Yuvathy Technologies · Bengaluru, India</span><div class="footer-legal"><a href="/privacy.html">Privacy</a><a href="/terms.html" aria-current="page">Terms</a><a href="/cookies.html">Cookies</a></div></div>
         </div>
     </footer>
-
-    <script type="module" src="js/script.js"></script>
+    <script type="module" src="/js/site.js"></script>
 </body>
-
 </html>

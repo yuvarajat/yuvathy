@@ -19,7 +19,7 @@
     <meta name="author" content="Yuvathy Technologies">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://yuvathy.in/services/accounting-compliance/">
-    <meta name="theme-color" content="#070b16">
+    <meta name="theme-color" content="#030303">
 
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -147,50 +147,41 @@
     }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/pages.css">
 </head>
 
 <body class="service-detail-page">
-    <div class="scroll-progress"></div>
-    <div class="cursor-glow"></div>
-    <div class="aurora-bg"></div>
-    <div class="grid-overlay"></div>
-
-    <header id="header">
-        <div class="container nav-container">
-            <a href="/" class="logo" aria-label="Yuvathy Technologies home">
-                <img class="logo-icon" src="/assets/yuvathy-symbol.png" alt="" width="48" height="48">
-                <span class="logo-text" aria-hidden="true">
-                    <span class="logo-name">Yuvathy</span>
-                    <span class="logo-kicker">Technologies</span>
-                </span>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <div class="container nav-island">
+            <a href="/" class="brand" aria-label="Yuvathy Technologies home">
+                <img src="/assets/yuvathy-symbol.png" alt="" width="35" height="35">
+                <span><span class="brand-name">yuvathy</span><span class="brand-kicker">Technologies</span></span>
             </a>
-
-            <nav class="navbar" id="primary-navigation" aria-label="Primary navigation">
-                <ul class="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/#about">About</a></li>
-                    <li><a href="/#products">Products</a></li>
-                    <li><a href="/#services" aria-current="page">Services</a></li>
-                    <li><a href="/#tech">Technologies</a></li>
-                    <li><a href="/#contact">Contact</a></li>
-                </ul>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="/#services" aria-current="page">What we do</a>
+                <a href="/#products">Our product</a>
+                <a href="/#about">Who we are</a>
+                <a href="/#process">How we work</a>
+                <a href="/#careers">Careers</a>
             </nav>
-
-            <a href="https://wa.me/917418177976?text=Hello%20Yuvathy%2C%20I%20would%20like%20to%20discuss%20accounting%20and%20compliance%20services." class="btn nav-btn" target="_blank" rel="noopener noreferrer">
-                Let's Talk
-            </a>
-            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-                <i class="ri-menu-3-line"></i>
-            </button>
+            <a href="/#contact" class="button nav-contact">Let’s talk <span class="arrow" aria-hidden="true">↗</span></a>
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation" type="button"><span></span><span></span></button>
         </div>
     </header>
+    <nav class="mobile-menu" id="mobile-navigation" aria-label="Mobile navigation" inert>
+        <a href="/#services" style="--i:1">What we do</a>
+        <a href="/#products" style="--i:2">Our product</a>
+        <a href="/#about" style="--i:3">Who we are</a>
+        <a href="/#process" style="--i:4">How we work</a>
+        <a href="/#careers" style="--i:5">Careers</a>
+        <a href="/#contact" style="--i:6">Let’s talk ↗</a>
+        <p>Bengaluru, India · hello@yuvathy.in</p>
+    </nav>
 
-    <main>
+    <main id="main">
         <section class="service-hero" aria-labelledby="service-page-title">
             <div class="container">
                 <nav class="service-breadcrumb" aria-label="Breadcrumb">
@@ -202,37 +193,37 @@
                 </nav>
 
                 <div class="service-hero-grid">
-                    <div class="service-hero-content">
-                        <span class="section-tag">Accounting &amp; Business Compliance</span>
+                    <div class="service-hero-content reveal">
+                        <span class="eyebrow">Accounting &amp; Business Compliance</span>
                         <h1 id="service-page-title">Keep your accounts and compliance moving with confidence.</h1>
                         <p>Practical bookkeeping, tax filing, registration and recurring compliance support for sole proprietors, startups, SMEs and growing businesses in India.</p>
 
                         <div class="service-hero-actions">
-                            <a href="#service-options" class="btn primary">Explore Services <i class="ri-arrow-down-line"></i></a>
-                            <a href="https://wa.me/917418177976?text=Hello%20Yuvathy%2C%20I%20would%20like%20to%20discuss%20accounting%20and%20compliance%20services." class="btn secondary" target="_blank" rel="noopener noreferrer">
-                                <i class="ri-whatsapp-line"></i> Discuss Your Needs
+                            <a href="#service-options" class="button">Explore Services <span class="arrow" aria-hidden="true">↓</span></a>
+                            <a href="https://wa.me/917418177976?text=Hello%20Yuvathy%2C%20I%20would%20like%20to%20discuss%20accounting%20and%20compliance%20services." class="button button-secondary" target="_blank" rel="noopener noreferrer">
+                                Discuss Your Needs <span class="arrow" aria-hidden="true">↗</span>
                             </a>
                         </div>
 
                         <ul class="service-audience" aria-label="Businesses we support">
-                            <li><i class="ri-check-line"></i> Sole proprietors</li>
-                            <li><i class="ri-check-line"></i> Startups &amp; SMEs</li>
-                            <li><i class="ri-check-line"></i> Growing businesses</li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg> Sole proprietors</li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg> Startups &amp; SMEs</li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg> Growing businesses</li>
                         </ul>
                     </div>
 
-                    <aside class="service-overview" aria-label="Service overview">
+                    <aside class="service-overview reveal" aria-label="Service overview">
                         <div class="service-overview-heading">
                             <span>What we help manage</span>
-                            <i class="ri-file-list-3-line" aria-hidden="true"></i>
+                            <svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
                         </div>
                         <ul>
-                            <li><i class="ri-book-2-line"></i><span><strong>Books</strong>Accurate, organised financial records</span></li>
-                            <li><i class="ri-file-paper-2-line"></i><span><strong>Filings</strong>GST, TDS, income tax, PF and ESI</span></li>
-                            <li><i class="ri-building-4-line"></i><span><strong>Registrations</strong>GST, MSME/Udyam, PF and ESI</span></li>
-                            <li><i class="ri-compass-3-line"></i><span><strong>Guidance</strong>A clear compliance path for your business</span></li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 3v18M12 8h4M12 12h4"/></svg><span><strong>Books</strong>Accurate, organised financial records</span></li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span><strong>Filings</strong>GST, TDS, income tax, PF and ESI</span></li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h1m4 0h1M9 11h1m4 0h1M9 15h1m4 0h1M10 21v-3h4v3"/></svg><span><strong>Registrations</strong>GST, MSME/Udyam, PF and ESI</span></li>
+                            <li><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5Z"/></svg><span><strong>Guidance</strong>A clear compliance path for your business</span></li>
                         </ul>
-                        <p><i class="ri-shield-check-line"></i> Specialist matters are coordinated with qualified professionals.</p>
+                        <p><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg> Specialist matters are coordinated with qualified professionals.</p>
                     </aside>
                 </div>
             </div>
@@ -240,15 +231,15 @@
 
         <section id="service-options" class="compliance-services" aria-labelledby="service-options-title">
             <div class="container">
-                <header class="section-header">
-                    <span class="section-tag">Services</span>
+                <header class="section-header reveal">
+                    <span class="eyebrow">Services</span>
                     <h2 id="service-options-title">Essential support for running a compliant business</h2>
                     <p>Choose help for a specific requirement or bring multiple accounting and compliance activities together under one coordinated service.</p>
                 </header>
 
                 <div class="compliance-services-grid">
-                    <article class="compliance-service-card">
-                        <div class="compliance-card-icon"><i class="ri-book-open-line"></i></div>
+                    <article class="compliance-service-card reveal">
+                        <div class="compliance-card-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5C9 3 5 3 3 4v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-2-1-6-1-9 1Zm0 0v15"/></svg></div>
                         <h3>Bookkeeping &amp; Accounts</h3>
                         <ul>
                             <li>Day-to-day bookkeeping</li>
@@ -259,8 +250,8 @@
                         </ul>
                     </article>
 
-                    <article class="compliance-service-card">
-                        <div class="compliance-card-icon"><i class="ri-receipt-line"></i></div>
+                    <article class="compliance-service-card reveal">
+                        <div class="compliance-card-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 3 3 2 3-2 3 2 3-2v18l-3-2-3 2-3-2-3 2Z"/><path d="M9 9h6M9 13h6"/></svg></div>
                         <h3>GST Services</h3>
                         <ul>
                             <li>GST registration</li>
@@ -271,8 +262,8 @@
                         </ul>
                     </article>
 
-                    <article class="compliance-service-card">
-                        <div class="compliance-card-icon"><i class="ri-percent-line"></i></div>
+                    <article class="compliance-service-card reveal">
+                        <div class="compliance-card-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 19 14-14"/><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/></svg></div>
                         <h3>Income Tax &amp; TDS</h3>
                         <ul>
                             <li>Income Tax Return filing support</li>
@@ -283,8 +274,8 @@
                         </ul>
                     </article>
 
-                    <article class="compliance-service-card">
-                        <div class="compliance-card-icon"><i class="ri-team-line"></i></div>
+                    <article class="compliance-service-card reveal">
+                        <div class="compliance-card-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M17 5a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 4v2"/></svg></div>
                         <h3>PF, ESI &amp; Labour Compliance</h3>
                         <ul>
                             <li>PF and ESI registration</li>
@@ -295,8 +286,8 @@
                         </ul>
                     </article>
 
-                    <article class="compliance-service-card compliance-service-card-wide">
-                        <div class="compliance-card-icon"><i class="ri-building-2-line"></i></div>
+                    <article class="compliance-service-card compliance-service-card-wide reveal">
+                        <div class="compliance-card-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V3h10v18M14 8h6v13M2 21h20M7 7h4M7 11h4M7 15h4M17 12h1M17 16h1"/></svg></div>
                         <div>
                             <h3>Business Registrations &amp; Compliance Consultation</h3>
                             <p>Starting with your idea, we help identify the registrations, licences, tax obligations and recurring compliance activities your operating model may require.</p>
@@ -314,23 +305,23 @@
 
         <section class="delivery-model" aria-labelledby="delivery-model-title">
             <div class="container">
-                <header class="section-header">
-                    <span class="section-tag">How We Deliver</span>
+                <header class="section-header reveal">
+                    <span class="eyebrow">How We Deliver</span>
                     <h2 id="delivery-model-title">One point of contact, with the right expertise involved</h2>
                     <p>You receive a clear path forward whether the requirement is routine or needs a qualified professional.</p>
                 </header>
 
                 <div class="delivery-model-grid">
-                    <article class="delivery-card">
+                    <article class="delivery-card reveal">
                         <span class="delivery-number">01</span>
-                        <div class="delivery-icon"><i class="ri-checkbox-circle-line"></i></div>
+                        <div class="delivery-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></div>
                         <h3>Handled by our team</h3>
                         <p>We directly manage suitable routine bookkeeping, documentation, standard registration and recurring filing support.</p>
                     </article>
 
-                    <article class="delivery-card delivery-card-accent">
+                    <article class="delivery-card delivery-card-accent reveal">
                         <span class="delivery-number">02</span>
-                        <div class="delivery-icon"><i class="ri-group-2-line"></i></div>
+                        <div class="delivery-icon"><svg class="page-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M2 21v-3a6 6 0 0 1 12 0v3m2-6a5 5 0 0 1 6 5v1"/></svg></div>
                         <h3>Professional coordination</h3>
                         <p>When certification, representation or specialist advice is required, we coordinate with qualified CA, CS, legal or accounting partners.</p>
                     </article>
@@ -340,8 +331,8 @@
 
         <section class="compliance-process" aria-labelledby="process-title">
             <div class="container">
-                <header class="section-header">
-                    <span class="section-tag">Simple Process</span>
+                <header class="section-header reveal">
+                    <span class="eyebrow">Simple Process</span>
                     <h2 id="process-title">From requirement to recurring support</h2>
                 </header>
 
@@ -374,7 +365,7 @@
         <section class="service-faq" aria-labelledby="service-faq-title">
             <div class="container service-faq-layout">
                 <header class="service-faq-intro">
-                    <span class="section-tag">Common Questions</span>
+                    <span class="eyebrow">Common Questions</span>
                     <h2 id="service-faq-title">Before you get started</h2>
                     <p>Have a different requirement? Tell us what you are working on and we will help identify the next step.</p>
                 </header>
@@ -405,18 +396,18 @@
 
         <section class="service-page-cta" aria-labelledby="service-cta-title">
             <div class="container">
-                <div class="service-cta-card">
+                <div class="service-cta-card reveal">
                     <div>
-                        <span class="section-tag">Start a Conversation</span>
+                        <span class="eyebrow">Start a Conversation</span>
                         <h2 id="service-cta-title">Tell us what your business needs next.</h2>
                         <p>Whether you need one registration or ongoing accounting and compliance support, we will help you understand the practical next step.</p>
                     </div>
                     <div class="service-cta-actions">
-                        <a href="https://wa.me/917418177976?text=Hello%20Yuvathy%2C%20I%20would%20like%20to%20discuss%20accounting%20and%20compliance%20services." class="btn primary" target="_blank" rel="noopener noreferrer">
-                            <i class="ri-whatsapp-line"></i> Chat on WhatsApp
+                        <a href="https://wa.me/917418177976?text=Hello%20Yuvathy%2C%20I%20would%20like%20to%20discuss%20accounting%20and%20compliance%20services." class="button" target="_blank" rel="noopener noreferrer">
+                            Chat on WhatsApp <span class="arrow" aria-hidden="true">↗</span>
                         </a>
-                        <a href="mailto:hello@yuvathy.in?subject=Accounting%20and%20Compliance%20Services" class="btn secondary">
-                            <i class="ri-mail-line"></i> Email Us
+                        <a href="mailto:hello@yuvathy.in?subject=Accounting%20and%20Compliance%20Services" class="button button-secondary">
+                            Email Us <span class="arrow" aria-hidden="true">↗</span>
                         </a>
                     </div>
                 </div>
@@ -425,59 +416,18 @@
         </section>
     </main>
 
-    <footer id="footer">
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" aria-label="Yuvathy Technologies home">
-                        <img class="footer-logo" src="/assets/yuvathy-logo.jpg" alt="Yuvathy Technologies" width="573" height="576" loading="lazy">
-                    </a>
-                    <p>Helping businesses build modern digital products and manage essential operational compliance.</p>
-                    <div class="social-links" aria-label="Yuvathy Technologies social media">
-                        <a href="https://www.linkedin.com/company/yuvathy-technologies/" target="_blank" rel="noopener noreferrer" aria-label="Yuvathy Technologies on LinkedIn"><i class="ri-linkedin-fill"></i></a>
-                        <a href="https://www.instagram.com/yuvathy.in/" target="_blank" rel="noopener noreferrer" aria-label="Yuvathy Technologies on Instagram"><i class="ri-instagram-line"></i></a>
-                        <a href="https://wa.me/917418177976" target="_blank" rel="noopener noreferrer" aria-label="Chat with Yuvathy Technologies on WhatsApp"><i class="ri-whatsapp-line"></i></a>
-                    </div>
+            <div class="footer-top">
+                <div class="footer-brand"><a href="/" class="brand" aria-label="Yuvathy Technologies home"><img src="/assets/yuvathy-symbol.png" alt="" width="35" height="35"><span><span class="brand-name">yuvathy</span><span class="brand-kicker">Technologies</span></span></a><p>Thoughtful software.<br>Practical support. A human approach.</p></div>
+                <div class="footer-links">
+                    <div><small>Explore</small><a href="/#services">What we do</a><a href="https://estateos.yuvathy.in" target="_blank" rel="noopener noreferrer">EstateOS ↗</a><a href="/services/accounting-compliance/">Business support</a></div>
+                    <div><small>Get to know us</small><a href="/#about">About Yuvathy</a><a href="/#careers">Careers</a><a href="https://www.linkedin.com/company/yuvathy-technologies/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/yuvathy.in/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
                 </div>
-
-                <nav class="footer-links" aria-label="Product links">
-                    <h4>Products</h4>
-                    <a href="https://estateos.yuvathy.in">EstateOS</a>
-                    <a href="/#products">PhotographyOS</a>
-                    <a href="/#products">HospitalOS</a>
-                    <a href="/#products">EduOS</a>
-                </nav>
-
-                <nav class="footer-links" aria-label="Service links">
-                    <h4>Services</h4>
-                    <a href="/#services">Software Development</a>
-                    <a href="/services/accounting-compliance/" aria-current="page">Accounting &amp; Compliance</a>
-                    <a href="/#services">Cloud Solutions</a>
-                    <a href="/#services">AI Integration</a>
-                </nav>
-
-                <nav class="footer-links" aria-label="Company links">
-                    <h4>Company</h4>
-                    <a href="/#about">About</a>
-                    <a href="/#contact">Contact</a>
-                    <a href="/#faq">FAQ</a>
-                </nav>
-
-                <nav class="footer-links" aria-label="Legal links">
-                    <h4>Legal</h4>
-                    <a href="/privacy.html">Privacy Policy</a>
-                    <a href="/terms.html">Terms of Use</a>
-                    <a href="/cookies.html">Cookie Policy</a>
-                </nav>
             </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Yuvathy Technologies. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><span>© 2026 Yuvathy Technologies · Bengaluru, India</span><div class="footer-legal"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/cookies.html">Cookies</a></div></div>
         </div>
     </footer>
-
-    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="/js/site.js"></script>
 </body>
-
 </html>

@@ -15,55 +15,52 @@
     <title>Privacy Policy | Yuvathy Technologies</title>
     <meta name="description" content="Learn how Yuvathy Technologies collects, uses, protects and manages personal information.">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#060A14">
+    <meta name="theme-color" content="#030303">
     <link rel="canonical" href="https://yuvathy.in/privacy.html">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="alternate icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/pages.css">
 </head>
 
 <body class="legal-page">
-    <div class="scroll-progress"></div>
-    <div class="aurora-bg"></div>
-    <div class="grid-overlay"></div>
-
-    <header id="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo" aria-label="Yuvathy Technologies home">
-                <img class="logo-icon" src="assets/yuvathy-symbol.png" alt="" width="48" height="48">
-                <span class="logo-text" aria-hidden="true">
-                    <span class="logo-name">Yuvathy</span>
-                    <span class="logo-kicker">Technologies</span>
-                </span>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <div class="container nav-island">
+            <a href="/" class="brand" aria-label="Yuvathy Technologies home">
+                <img src="/assets/yuvathy-symbol.png" alt="" width="35" height="35">
+                <span><span class="brand-name">yuvathy</span><span class="brand-kicker">Technologies</span></span>
             </a>
-
-            <nav class="navbar" id="primary-navigation" aria-label="Primary navigation">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="/#services">What we do</a>
+                <a href="/#products">Our product</a>
+                <a href="/#about">Who we are</a>
+                <a href="/#process">How we work</a>
+                <a href="/#careers">Careers</a>
             </nav>
-
-            <a href="index.html" class="btn nav-btn">Back to Home</a>
-            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-                <i class="ri-menu-3-line"></i>
-            </button>
+            <a href="/#contact" class="button nav-contact">Let’s talk <span class="arrow" aria-hidden="true">↗</span></a>
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation" type="button"><span></span><span></span></button>
         </div>
     </header>
+    <nav class="mobile-menu" id="mobile-navigation" aria-label="Mobile navigation" inert>
+        <a href="/#services" style="--i:1">What we do</a>
+        <a href="/#products" style="--i:2">Our product</a>
+        <a href="/#about" style="--i:3">Who we are</a>
+        <a href="/#process" style="--i:4">How we work</a>
+        <a href="/#careers" style="--i:5">Careers</a>
+        <a href="/#contact" style="--i:6">Let’s talk ↗</a>
+        <p>Bengaluru, India · hello@yuvathy.in</p>
+    </nav>
 
-    <main class="legal-main">
+    <main class="legal-main" id="main">
         <div class="container">
-            <div class="legal-hero">
-                <span class="section-tag">Legal</span>
+            <div class="legal-hero reveal">
+                <span class="eyebrow">Legal</span>
                 <h1>Privacy Policy</h1>
                 <p>This policy explains what personal information Yuvathy Technologies may receive through this website, why we use it and the choices available to you.</p>
-                <span class="legal-updated"><i class="ri-calendar-line"></i> Effective 8 September 2026</span>
+                <span class="legal-updated">Effective 8 September 2026</span>
             </div>
 
             <div class="legal-layout">
@@ -73,18 +70,20 @@
                     <a href="#information">Information</a>
                     <a href="#use">How we use it</a>
                     <a href="#sharing">Sharing</a>
+                    <a href="#retention">Retention and security</a>
                     <a href="#rights">Your rights</a>
+                    <a href="#changes">Changes to this policy</a>
                     <a href="#contact-privacy">Contact</a>
                 </aside>
 
                 <article class="legal-document">
-                    <section id="scope">
+                    <section id="scope" class="reveal">
                         <h2>1. Scope</h2>
                         <p>This Privacy Policy applies to yuvathy.in and communications initiated through this website. Separate products, client projects or services may have their own privacy terms or contractual data-processing provisions.</p>
                         <p>In this policy, “Yuvathy Technologies”, “we”, “us” and “our” refer to Yuvathy Technologies, Bengaluru, Karnataka, India.</p>
                     </section>
 
-                    <section id="information">
+                    <section id="information" class="reveal">
                         <h2>2. Information we may collect</h2>
                         <h3>Information you provide</h3>
                         <ul>
@@ -96,7 +95,7 @@
                         <p>When you visit this website, Google Analytics and our hosting or security providers may process technical information such as first-party cookie identifiers, IP address, browser and device details, requested pages, interactions, timestamps, general location and diagnostic or security logs. Google states that Analytics does not log or store individual IP addresses. We do not intentionally use advertising trackers on this website.</p>
                     </section>
 
-                    <section id="use">
+                    <section id="use" class="reveal">
                         <h2>3. How we use information</h2>
                         <ul>
                             <li>To respond to enquiries, discuss projects and provide requested information.</li>
@@ -109,30 +108,30 @@
                         <p>We process personal information with consent, for specified legitimate uses, to take steps you request, to perform an agreement or where another lawful basis is available under applicable law.</p>
                     </section>
 
-                    <section id="sharing">
+                    <section id="sharing" class="reveal">
                         <h2>4. When information may be shared</h2>
                         <p>We do not sell personal information. We may share limited information with trusted analytics, hosting, infrastructure, communications or professional-service providers that support our operations, subject to appropriate confidentiality and security expectations.</p>
                         <p>Information may also be disclosed where required by law, to protect legal rights or security, or as part of a genuine business restructuring. Some providers may process information outside your state or country, subject to applicable legal requirements.</p>
                     </section>
 
-                    <section id="retention">
+                    <section id="retention" class="reveal">
                         <h2>5. Retention and security</h2>
                         <p>We retain information only for as long as reasonably necessary for the purposes described above, including business, contractual, legal, accounting and security needs. Retention periods vary according to the nature and context of the information.</p>
                         <p>We use reasonable administrative, technical and organisational safeguards. No internet transmission or storage system can be guaranteed to be completely secure.</p>
                     </section>
 
-                    <section id="rights">
+                    <section id="rights" class="reveal">
                         <h2>6. Your choices and rights</h2>
                         <p>Depending on applicable law, you may ask us to provide information about our processing, correct or erase personal data, withdraw consent, or address a grievance. We may need to verify your identity and may retain information where the law permits or requires it.</p>
                         <p>This business-focused website is not directed to children, and we do not knowingly seek personal information from anyone under 18 through it.</p>
                     </section>
 
-                    <section id="changes">
+                    <section id="changes" class="reveal">
                         <h2>7. Changes to this policy</h2>
                         <p>We may update this policy when our practices, services or legal obligations change. The effective date at the top of this page identifies the latest version.</p>
                     </section>
 
-                    <section id="contact-privacy">
+                    <section id="contact-privacy" class="reveal">
                         <h2>8. Contact and grievances</h2>
                         <p>For privacy questions, requests or grievances, email <a href="mailto:hello@yuvathy.in">hello@yuvathy.in</a> or write to Yuvathy Technologies, Bengaluru, Karnataka, India. Please include enough detail for us to understand and respond to your request.</p>
                         <div class="legal-note">This page describes the website's current information practices. It should be reviewed by qualified legal counsel before relying on it for a particular regulated service, client engagement or jurisdiction.</div>
@@ -142,23 +141,18 @@
         </div>
     </main>
 
-    <footer id="footer">
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-bottom">
-                <p>© 2026 Yuvathy Technologies. All Rights Reserved.</p>
-                <div class="legal-footer-links">
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="cookies.html">Cookies</a>
-                    <a href="https://www.linkedin.com/company/yuvathy-technologies/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-                    <a href="https://www.instagram.com/yuvathy.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-                    <a href="https://wa.me/917418177976" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            <div class="footer-top">
+                <div class="footer-brand"><a href="/" class="brand" aria-label="Yuvathy Technologies home"><img src="/assets/yuvathy-symbol.png" alt="" width="35" height="35"><span><span class="brand-name">yuvathy</span><span class="brand-kicker">Technologies</span></span></a><p>Thoughtful software.<br>Practical support. A human approach.</p></div>
+                <div class="footer-links">
+                    <div><small>Explore</small><a href="/#services">What we do</a><a href="https://estateos.yuvathy.in" target="_blank" rel="noopener noreferrer">EstateOS ↗</a><a href="/services/accounting-compliance/">Business support</a></div>
+                    <div><small>Get to know us</small><a href="/#about">About Yuvathy</a><a href="/#careers">Careers</a><a href="https://www.linkedin.com/company/yuvathy-technologies/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/yuvathy.in/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
                 </div>
             </div>
+            <div class="footer-bottom"><span>© 2026 Yuvathy Technologies · Bengaluru, India</span><div class="footer-legal"><a href="/privacy.html" aria-current="page">Privacy</a><a href="/terms.html">Terms</a><a href="/cookies.html">Cookies</a></div></div>
         </div>
     </footer>
-
-    <script type="module" src="js/script.js"></script>
+    <script type="module" src="/js/site.js"></script>
 </body>
-
 </html>

@@ -1,11 +1,11 @@
 {
   "name": "Yuvathy Technologies",
   "short_name": "Yuvathy",
-  "description": "Modern software products, SaaS platforms and cloud solutions for ambitious businesses.",
+  "description": "Thoughtful software and practical business support from Yuvathy Technologies.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#060A14",
-  "theme_color": "#060A14",
+  "background_color": "#030303",
+  "theme_color": "#030303",
   "icons": [
     {
       "src": "/assets/favicon.svg",

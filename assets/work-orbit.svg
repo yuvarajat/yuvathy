@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="ribbon" x1="114" y1="98" x2="487" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00B4D8"/><stop offset=".28" stop-color="#0B2631"/><stop offset=".55" stop-color="#C77DFF"/><stop offset=".8" stop-color="#2E1844"/><stop offset="1" stop-color="#00B4D8"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="176" y1="95" x2="429" y2="523" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78E8FF"/><stop offset=".38" stop-color="#00B4D8" stop-opacity=".15"/><stop offset=".7" stop-color="#E1BDFF"/><stop offset="1" stop-color="#C77DFF" stop-opacity=".1"/>
+    </linearGradient>
+    <radialGradient id="core"><stop stop-color="#191320"/><stop offset=".7" stop-color="#08090C"/><stop offset="1" stop-color="#030303"/></radialGradient>
+    <radialGradient id="halo"><stop stop-color="#9A5DD6" stop-opacity=".15"/><stop offset="1" stop-color="#030303" stop-opacity="0"/></radialGradient>
+  </defs>
+  <circle cx="300" cy="300" r="288" fill="url(#halo)"/>
+  <g stroke="#FFFFFF" stroke-opacity=".055"><circle cx="300" cy="300" r="235"/><path d="M42 300H558M300 42V558"/></g>
+  <circle cx="300" cy="300" r="142" fill="url(#core)"/>
+  <g transform="rotate(-35 300 300)">
+    <ellipse cx="300" cy="300" rx="172" ry="208" stroke="url(#ribbon)" stroke-width="58"/>
+    <ellipse cx="300" cy="300" rx="200" ry="236" stroke="url(#edge)" stroke-width="1.3"/>
+    <ellipse cx="300" cy="300" rx="143" ry="179" stroke="url(#edge)" stroke-width="1"/>
+  </g>
+  <g transform="rotate(45 300 300)">
+    <ellipse cx="300" cy="300" rx="88" ry="222" stroke="url(#ribbon)" stroke-width="34"/>
+    <ellipse cx="300" cy="300" rx="105" ry="239" stroke="url(#edge)" stroke-width="1.1"/>
+    <ellipse cx="300" cy="300" rx="71" ry="205" stroke="url(#edge)" stroke-width=".8"/>
+  </g>
+  <circle cx="124" cy="144" r="3" fill="#00B4D8"/><circle cx="502" cy="365" r="3" fill="#C77DFF"/>
+  <g stroke="#FFFFFF" stroke-opacity=".4"><path d="M93 409H103M98 404V414M472 113H482M477 108V118"/></g>
+</svg>
