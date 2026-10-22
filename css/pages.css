@@ -9,6 +9,10 @@
 .footer-legal a[aria-current="page"] { color: var(--accent); }
 
 /* Policies: a quiet reading column and a lightweight section index. */
+.careers-page .careers-section { padding: 168px 0 80px; }
+.careers-page .careers-layout { padding-top: 0; border-top: 0; }
+.careers-page .service-breadcrumb { margin-bottom: 40px; }
+.careers-page .career-opening { scroll-margin-top: 124px; }
 .legal-main { padding: 184px 0 80px; }
 .legal-hero { max-width: 800px; margin-bottom: 64px; }
 .legal-hero h1 { font-size: clamp(44px, 5vw, 64px); }
@@ -145,6 +149,8 @@
   .compliance-process-list li { grid-template-columns: 1fr; gap: 12px; }
 }
 @media (max-width: 767px) {
+  .careers-page .careers-section { padding: 128px 0 64px; }
+  .careers-page .service-breadcrumb { margin-bottom: 32px; }
   .legal-main { padding: 144px 0 64px; }
   .legal-hero { margin-bottom: 40px; }
   .legal-hero h1 { font-size: 44px; }
