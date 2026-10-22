@@ -5,8 +5,14 @@ const mobileBreakpoint = window.matchMedia('(min-width: 768px)');
 const root = document.documentElement;
 root.dataset.input = 'pointer';
 
-document.addEventListener('pointerdown', () => { root.dataset.input = 'pointer'; }, true);
-document.addEventListener('keydown', () => { root.dataset.input = 'keyboard'; }, true);
+function setInput(type) {
+  if (root.dataset.input !== type) root.dataset.input = type;
+}
+document.addEventListener('pointerdown', () => setInput('pointer'), true);
+document.addEventListener('pointermove', event => {
+  if (event.pointerType === 'mouse' && (event.movementX || event.movementY)) setInput('pointer');
+}, { passive: true });
+document.addEventListener('keydown', () => setInput('keyboard'), true);
 
 function setMenu(open, restoreFocus = false) {
   toggle.setAttribute('aria-expanded', String(open));
@@ -83,46 +89,43 @@ document.querySelectorAll('.contact-next-step, .faq-list details').forEach(detai
   });
 });
 
-if ('IntersectionObserver' in window) {
-  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (!motionQuery.matches) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.service-detail-page .reveal').forEach(element => observer.observe(element));
-    document.documentElement.classList.add('motion-ready');
-  }
-  const sectionObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const currentLink = [...desktop.querySelectorAll('a')].find(link =>
-        link.hash === `#${entry.target.id}` && link.pathname === location.pathname
-      );
-      if (!currentLink) return;
-      desktop.querySelectorAll('a').forEach(link => {
-        if (link === currentLink) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    });
-  }, { rootMargin: '-20% 0px -55% 0px' });
-  document.querySelectorAll('main > section[id]').forEach(section => sectionObserver.observe(section));
+// Determine the current section from the viewport, including sections with no navigation link.
+// Read all geometry before writing attributes, and schedule work only when the page changes.
+const navigationGroups = [
+  { links: [...desktop.querySelectorAll('a')], sections: [...document.querySelectorAll('main > section[id]')] },
+  { links: [...document.querySelectorAll('.legal-nav a')], sections: [...document.querySelectorAll('.legal-document section')] }
+].map(group => ({
+  ...group,
+  links: group.links.filter(link => link.hash && link.pathname === location.pathname),
+  current: undefined
+})).filter(group => group.links.length && group.sections.length);
 
-  const policyLinks = [...document.querySelectorAll('.legal-nav a')];
-  if (policyLinks.length) {
-    const policyObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        policyLinks.forEach(link => {
-          if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
-      });
-    }, { rootMargin: '-120px 0px -55% 0px' });
-    document.querySelectorAll('.legal-document section').forEach(section => policyObserver.observe(section));
-  }
+let navigationFrame = 0;
+function updateNavigation() {
+  navigationFrame = 0;
+  const readingLine = Math.min(innerHeight * .3, 220);
+  const atEnd = scrollY + innerHeight >= root.scrollHeight - 2;
+  const selections = navigationGroups.map(group => {
+    const sections = group.sections.map(section => ({ section, top: section.getBoundingClientRect().top }));
+    const currentSection = atEnd ? sections.at(-1)?.section : sections.filter(item => item.top <= readingLine).at(-1)?.section;
+    return group.links.find(link => link.hash === `#${currentSection?.id}`) || null;
+  });
+  navigationGroups.forEach((group, index) => {
+    const current = selections[index];
+    if (group.current === current) return;
+    group.current = current;
+    group.links.forEach(link => {
+      if (link === current) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  });
 }
+function queueNavigation() {
+  if (navigationGroups.length && !navigationFrame) navigationFrame = requestAnimationFrame(updateNavigation);
+}
+window.addEventListener('scroll', queueNavigation, { passive: true });
+window.addEventListener('resize', queueNavigation, { passive: true });
+window.addEventListener('pageshow', queueNavigation);
+document.addEventListener('toggle', queueNavigation, true);
+document.fonts.ready.then(queueNavigation);
+queueNavigation();
