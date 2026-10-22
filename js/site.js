@@ -2,6 +2,11 @@ const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.mobile-menu');
 const desktop = document.querySelector('.desktop-nav');
 const mobileBreakpoint = window.matchMedia('(min-width: 768px)');
+const root = document.documentElement;
+root.dataset.input = 'pointer';
+
+document.addEventListener('pointerdown', () => { root.dataset.input = 'pointer'; }, true);
+document.addEventListener('keydown', () => { root.dataset.input = 'keyboard'; }, true);
 
 function setMenu(open, restoreFocus = false) {
   toggle.setAttribute('aria-expanded', String(open));
@@ -11,17 +16,22 @@ function setMenu(open, restoreFocus = false) {
   document.body.classList.toggle('menu-open', open);
   document.querySelector('main').inert = open;
   document.querySelector('footer').inert = open;
-  if (open) requestAnimationFrame(() => requestAnimationFrame(() => {
-    if (toggle.getAttribute('aria-expanded') === 'true') {
-      menu.querySelector('a').focus({ preventScroll: true });
-    }
-  }));
+  if (open && root.dataset.input === 'keyboard') {
+    menu.querySelector('a').focus({ preventScroll: true });
+  }
   if (restoreFocus) toggle.focus({ preventScroll: true });
 }
 
-toggle.addEventListener('click', () => {
+toggle.addEventListener('click', event => {
+  if (event.detail === 0) root.dataset.input = 'keyboard';
   const open = toggle.getAttribute('aria-expanded') !== 'true';
   setMenu(open, !open);
+});
+menu.addEventListener('transitionend', event => {
+  if (event.target === menu && event.propertyName === 'opacity' &&
+      toggle.getAttribute('aria-expanded') === 'true' && document.activeElement === toggle) {
+    menu.querySelector('a').focus({ preventScroll: true });
+  }
 });
 menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', event => {
@@ -38,7 +48,40 @@ document.addEventListener('keydown', event => {
     }
   }
 });
-mobileBreakpoint.addEventListener('change', event => { if (event.matches) setMenu(false); });
+mobileBreakpoint.addEventListener('change', event => {
+  if (event.matches) {
+    const wasOpen = toggle.getAttribute('aria-expanded') === 'true';
+    setMenu(false);
+    if (wasOpen) desktop.querySelector('a').focus({ preventScroll: true });
+  }
+});
+
+// Native details keep their immediate layout and keyboard behavior; only pointer-opened answers fade.
+document.querySelectorAll('.contact-next-step, .faq-list details').forEach(details => {
+  let fadeOnOpen = false;
+  let answerAnimations = [];
+  details.addEventListener('keydown', () => {
+    fadeOnOpen = false;
+    answerAnimations.forEach(animation => animation.cancel());
+  });
+  details.querySelector('summary').addEventListener('click', event => {
+    fadeOnOpen = event.detail > 0 && !details.open;
+  });
+  details.addEventListener('toggle', () => {
+    answerAnimations.forEach(animation => animation.cancel());
+    answerAnimations = [];
+    if (details.open && fadeOnOpen) {
+      const styles = getComputedStyle(root);
+      details.querySelectorAll(':scope > p').forEach(answer => {
+        answerAnimations.push(answer.animate([{ opacity: 0 }, { opacity: 1 }], {
+          duration: parseFloat(styles.getPropertyValue('--motion-fade')),
+          easing: styles.getPropertyValue('--curve').trim()
+        }));
+      });
+    }
+    fadeOnOpen = false;
+  });
+});
 
 if ('IntersectionObserver' in window) {
   const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -51,7 +94,7 @@ if ('IntersectionObserver' in window) {
         }
       });
     }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    document.querySelectorAll('.service-detail-page .reveal').forEach(element => observer.observe(element));
     document.documentElement.classList.add('motion-ready');
   }
   const sectionObserver = new IntersectionObserver(entries => {
