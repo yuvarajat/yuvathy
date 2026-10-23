@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Yuvathy Technologies Blog</title>
+    <link>https://yuvathy.in/blog/</link>
+    <description>Practical guides to websites, software, and everyday business workflows.</description>
+    <language>en-IN</language>
+    <atom:link href="https://yuvathy.in/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When should your business move beyond spreadsheets?</title>
+      <link>https://yuvathy.in/blog/when-to-move-beyond-spreadsheets/</link>
+      <description>A practical way to decide whether to improve your spreadsheet, use an existing tool, or build custom software around your business workflow.</description>
+      <guid isPermaLink="true">https://yuvathy.in/blog/when-to-move-beyond-spreadsheets/</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>A simple way to organise property enquiries and follow-ups</title>
+      <link>https://yuvathy.in/blog/organise-property-enquiries-and-follow-ups/</link>
+      <description>A practical workflow for property enquiries: connect the customer and property, agree ownership, record the next action, and keep follow-ups visible.</description>
+      <guid isPermaLink="true">https://yuvathy.in/blog/organise-property-enquiries-and-follow-ups/</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>What to prepare before building a business website</title>
+      <link>https://yuvathy.in/blog/what-to-prepare-for-a-business-website/</link>
+      <description>A simple website project brief for business owners: your audience, main action, first pages, available content, and the access needed for launch.</description>
+      <guid isPermaLink="true">https://yuvathy.in/blog/what-to-prepare-for-a-business-website/</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate>
+    </item>
+  </channel>
+</rss>

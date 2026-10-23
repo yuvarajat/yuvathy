@@ -506,3 +506,8 @@ html[data-input="keyboard"] :is(.mobile-menu, .button, .text-link, .contact-link
 html[data-input="keyboard"] .menu-toggle span,
 html[data-input="keyboard"] .faq-list summary::after { transition: none; }
 html[data-input="keyboard"] .button:active { transform: none; opacity: .8; }
+@media (max-width: 767px) and (max-height: 600px) {
+  .mobile-menu { justify-content: flex-start; overflow-y: auto; padding-top: 104px; }
+  .mobile-menu a { font-size: 26px; line-height: 1.6; }
+  .mobile-menu p { margin-top: 24px; }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "when-to-move-beyond-spreadsheets",
+  "title": "When should your business move beyond spreadsheets?",
+  "description": "A practical way to decide whether to improve your spreadsheet, use an existing tool, or build custom software around your business workflow.",
+  "category": "Software decisions",
+  "published": "2026-10-24",
+  "intro": "A spreadsheet can be the right tool for years. The useful question is where it starts making work harder.",
+  "sections": [
+    {
+      "id": "look-for-friction",
+      "heading": "Look for repeated friction, not a row count",
+      "body": "<p>A large sheet is not automatically a problem. A small one can be a problem if nobody knows which version to trust. Look at what happens around the file: the copying, checking, chasing, and correcting.</p><p>Imagine an enquiry arriving by email. Someone copies it into a sheet, messages a colleague, and later asks whether the customer was contacted. The issue may be the handoff between people rather than the spreadsheet itself.</p><p>For a few working days, note each repeated task and where it gets stuck. You will have a more useful starting point than a request to replace every spreadsheet.</p>"
+    },
+    {
+      "id": "try-a-small-fix",
+      "heading": "Try a simpler fix first",
+      "body": "<p>Before commissioning software, agree where the current information lives, who maintains it, and which fields everyone needs to fill in. A shared file, consistent status names, and a named owner may be enough.</p><p>Then check whether an existing tool already fits the job. A ready-made system can be a sensible choice when your process is straightforward and its limitations are acceptable.</p>"
+    },
+    {
+      "id": "choose-the-next-step",
+      "heading": "Choose the smallest useful next step",
+      "body": "<table><caption>A starting point for your decision</caption><thead><tr><th scope=\"col\">What is getting in the way?</th><th scope=\"col\">What to try first</th></tr></thead><tbody><tr><td>Inconsistent entries or duplicate files</td><td>Clear ownership and a shared template</td></tr><tr><td>A common process with standard needs</td><td>An existing business tool</td></tr><tr><td>Repeated handoffs across tools or a specific internal workflow</td><td>A small integration or custom application</td></tr></tbody></table><p>These are starting points, not fixed rules. Compare the effort of changing your process with the cost of building and maintaining another system.</p>"
+    },
+    {
+      "id": "scope-one-workflow",
+      "heading": "Scope one workflow before the whole system",
+      "body": "<p>If a custom build still makes sense, describe one complete piece of work. For an enquiry process, that might mean capturing the enquiry, assigning someone to it, and recording a dated next step.</p><p>Bring a sample with customer details removed. Explain who uses it, what each person can change, and which tools it needs to connect to. Include the exceptions: duplicate entries, missing details, or a colleague being away.</p><p>A useful example brief is: “Keep incoming enquiries in one place, show who is handling each one, and make overdue follow-ups easy to find.” That is more actionable than asking for a complete business platform.</p>"
+    },
+    {
+      "id": "define-the-result",
+      "heading": "Decide what improvement would look like",
+      "body": "<p>Choose a result you can check: less copying, fewer missed handoffs, or a quicker daily review. Record how the task works now so you can compare it with the first version.</p><p>Also agree how data will move across, who will maintain the software, and what the team will do if it is unavailable. The right solution should make the work easier to run, including after launch.</p>"
+    }
+  ],
+  "service": "/services/custom-software-development/",
+  "service_label": "Explore custom software development",
+  "cta_title": "Have a workflow in mind?",
+  "cta_text": "Bring the task you want to simplify. We can help work out a practical first version."
+}

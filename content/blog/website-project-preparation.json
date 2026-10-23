@@ -1,0 +1,39 @@
+{
+  "slug": "what-to-prepare-for-a-business-website",
+  "title": "What to prepare before building a business website",
+  "description": "A simple website project brief for business owners: your audience, main action, first pages, available content, and the access needed for launch.",
+  "category": "Business websites",
+  "published": "2026-10-24",
+  "intro": "You don’t need a finished brief. A few clear decisions can make the first conversation much more useful.",
+  "sections": [
+    {
+      "id": "choose-the-visitor",
+      "heading": "Start with the visitor and the next step",
+      "body": "<p>Who will use the website, and what should they be able to do after reading it? A prospective customer comparing services needs different information from an existing customer looking for support.</p><p>Choose a main action: send an enquiry, book a conversation, visit a location, or explore a product. Other links can still exist, but this decision helps each page have a clear purpose.</p><p>Write that action in everyday language. “Send us your project details” is easier to design around than “improve our digital presence.”</p>"
+    },
+    {
+      "id": "pick-the-first-pages",
+      "heading": "Choose the first pages, not every possible page",
+      "body": "<p>List the questions customers ask before they contact you. Your pages should help answer those questions: what you do, who it is for, how working with you begins, and how to reach you.</p><p>A focused first version might include a homepage, useful service pages, a short company introduction, and contact information. Add other pages when they have something specific to say.</p><p>Share a few websites you like and explain why. Mention a useful navigation menu, a readable layout, or a clear enquiry form rather than asking to copy the whole design.</p>"
+    },
+    {
+      "id": "gather-the-material",
+      "heading": "Gather what is already available",
+      "body": "<p>Bring your logo files, service descriptions, contact details, and any photographs you have permission to use. Rough notes are useful too. Knowing what is missing makes it easier to agree who will provide it.</p><p>If you want to show customer work, confirm that you can share it. A small, accurate example is more helpful than a portfolio filled with unnamed projects or promises you cannot support.</p><p>For a rebuild, note what customers already use on the current website. An important download or contact address can be easy to overlook during a visual refresh.</p>"
+    },
+    {
+      "id": "bring-a-short-brief",
+      "heading": "Bring this short brief to the first conversation",
+      "body": "<dl class=\"article-brief\"><div><dt>Business</dt><dd>What you offer, in a few sentences.</dd></div><div><dt>Visitors</dt><dd>Who you want to reach and what they need to know.</dd></div><div><dt>Main action</dt><dd>The next step you want a visitor to take.</dd></div><div><dt>First pages</dt><dd>The information needed for the initial launch.</dd></div><div><dt>Materials</dt><dd>What is ready, what is missing, and who can supply it.</dd></div><div><dt>Constraints</dt><dd>Your budget range, important dates, and existing tools.</dd></div></dl><p>You do not need a perfect answer to every item. The gaps are useful things to discuss before the scope and estimate are agreed.</p>"
+    },
+    {
+      "id": "agree-launch-needs",
+      "heading": "Agree what launch and handover include",
+      "body": "<p>Find out who controls the domain, hosting, and business email. Arrange access through the appropriate account permissions rather than putting passwords into a project brief. A website change should not accidentally disrupt your email.</p><p>Agree how enquiry forms will be tested, who will receive messages, and who will make future updates. For an existing site, include a plan for old page addresses that need to change.</p><p>Clear content, descriptive page titles, and crawlable links are useful foundations for search. Google’s <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\">SEO starter guide</a> explains these basics. They support discovery; they do not guarantee a ranking at launch.</p>"
+    }
+  ],
+  "service": "/services/website-development/",
+  "service_label": "Explore website development",
+  "cta_title": "Your notes are enough to start.",
+  "cta_text": "Tell us what your business needs from its website. We’ll help shape the first version."
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "organise-property-enquiries-and-follow-ups",
+  "title": "A simple way to organise property enquiries and follow-ups",
+  "description": "A practical workflow for property enquiries: connect the customer and property, agree ownership, record the next action, and keep follow-ups visible.",
+  "category": "Property workflows",
+  "published": "2026-10-24",
+  "intro": "Before adding another tool, agree what your team needs to know about each enquiry—and who owns the next step.",
+  "sections": [
+    {
+      "id": "connect-the-records",
+      "heading": "Keep the person and the property connected",
+      "body": "<p>A property name in one file and a phone number in a message are not enough context for the next conversation. Keep a clear reference between the person, the property they asked about, and the enquiry.</p><p>The same person may ask about more than one listing. Avoid turning every conversation into an unrelated customer record. Before creating another entry, check whether the person is already known to the team.</p><p>Start with the information needed to continue the conversation: a name, a contact method, the property reference, and the requirement they shared.</p>"
+    },
+    {
+      "id": "agree-status-names",
+      "heading": "Use a few status names everyone understands",
+      "body": "<p>Choose statuses that describe what has actually happened. For example, “New enquiry,” “Contacted,” and “Site visit planned” are easier to act on when the team agrees what each one means.</p><p>Keep the status separate from the next task. “Contacted” describes the situation; “Send the floor plan on Tuesday” describes an action. A status alone should not be the team's reminder system.</p><p>These are example workflow labels, not a required set. Use the words your team can apply consistently.</p>"
+    },
+    {
+      "id": "name-the-next-step",
+      "heading": "Give each active enquiry an owner and a next step",
+      "body": "<p>Agree who is responsible for moving the enquiry forward. When responsibility changes, record the handover rather than assuming a group message has made it clear.</p><p>For each active enquiry, keep three things together: the person handling it, the next action, and the date that action needs attention. Replace an old next step when it has been completed.</p><aside class=\"article-note\"><h3>Example follow-up note</h3><p>Garden apartment · Site visit planned · Handled by the assigned agent · Confirm the meeting point with the customer before Thursday’s visit.</p></aside><p>The example is deliberately specific. “Follow up soon” leaves the next person to work out what was meant.</p>"
+    },
+    {
+      "id": "review-the-work",
+      "heading": "Review the work that needs attention",
+      "body": "<p>A short team review can begin with new enquiries, actions due today, overdue actions, and records without an owner. Decide what needs to happen next rather than reading every note aloud.</p><p>Keep records current enough that a colleague can continue the conversation if someone is unavailable. Record useful outcomes, such as a requested document or an agreed visit, instead of leaving the context only in a private message.</p><p>When an enquiry is no longer active, record that clearly so it does not keep appearing as unfinished work.</p>"
+    },
+    {
+      "id": "choose-a-shared-workspace",
+      "heading": "Choose a shared workspace when the process needs one",
+      "body": "<p>A carefully maintained sheet may be enough for a small team. If people keep copying information between listings, customer records, and follow-up notes, compare tools against that specific problem.</p><p>Use a sample enquiry to check the whole journey before choosing software. Can the team find the relevant property, understand the conversation, and see what should happen next?</p><p>EstateOS is Yuvathy’s property workspace for listings, enquiries, customers, and follow-ups. <a href=\"https://estateos.yuvathy.in\">Explore EstateOS</a> to see whether it fits the way your team works.</p>"
+    }
+  ],
+  "service": "https://estateos.yuvathy.in",
+  "service_label": "Explore EstateOS",
+  "cta_title": "Keep the property work together.",
+  "cta_text": "Take a look at EstateOS, our workspace for property teams, developers, agencies, and brokers."
+}
