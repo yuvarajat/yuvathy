@@ -445,9 +445,11 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .home-page .hero { padding-top: 160px; padding-bottom: 48px; }
 .home-page .hero-art { width: min(440px, 100%); justify-self: end; }
 .home-page .section-heading { margin-bottom: 32px; }
-.home-page .service-core { min-height: 0; padding: 28px; }
+.home-page .service-core { min-height: 0; height: 100%; padding: 28px; }
 .home-page .service-core h3 { margin-top: 24px; font-size: 25px; }
 .home-page .service-core .text-link { margin-top: 28px; }
+.home-page .service-links { display: grid; gap: 10px; margin-top: 24px; }
+.home-page .service-links .text-link { margin-top: 0; min-height: 44px; justify-content: space-between; }
 .home-page .product-heading { margin-bottom: 28px; }
 .home-page .product-copy .button { margin-top: 24px; }
 .home-page .about-layout { align-items: start; }

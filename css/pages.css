@@ -203,3 +203,75 @@
   .service-hero-content h1 { font-size: 35px; }
   .service-detail-page .section-header h2 { font-size: 31px; }
 }
+
+/* Software services: short briefs, open rows, and immediate reading content. */
+.digital-service-page { --section-space: 64px; }
+.digital-hero-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 80px; align-items: center; }
+.digital-service-page .service-hero-content h1 { font-size: clamp(40px, 4.2vw, 56px); line-height: 1.12; }
+.digital-service-page .service-hero-content > p { max-width: 570px; }
+.digital-hero-actions { align-items: center; gap: 20px; }
+.digital-hero-actions .quiet-link { font-size: 12px; }
+.project-note { padding-left: 24px; border-left: 2px solid var(--accent); }
+.project-note h2 { font-size: 13px; line-height: 1.6; color: var(--accent); }
+.project-note > p { margin-top: 16px; font-size: 22px; line-height: 1.6; color: #dedee5; }
+.project-note small { display: block; max-width: 290px; margin-top: 24px; font-size: 12px; line-height: 1.8; color: var(--muted); }
+.digital-service-page main > .digital-scope { background: #0b0b0d; border-block: 1px solid #ffffff06; }
+.digital-scope-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+.digital-section-intro h2 { font-size: clamp(32px, 3.2vw, 42px); line-height: 1.15; }
+.digital-section-intro > p { max-width: 340px; margin-top: 24px; font-size: 14px; line-height: 1.8; }
+.digital-service-list { margin: 0; }
+.digital-service-list > div + div { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border); }
+.digital-service-list dt { font-size: 20px; font-weight: 500; line-height: 1.4; }
+.digital-service-list dd { max-width: 510px; margin: 10px 0 0; font-size: 14px; line-height: 1.8; color: var(--muted); }
+.digital-scope-note { margin-top: 28px; font-size: 12px; line-height: 1.8; }
+.digital-process h2 { font-size: clamp(30px, 3vw, 38px); line-height: 1.2; }
+.digital-process-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; margin-top: 32px; }
+.digital-process-list li { padding-top: 20px; border-top: 1px solid var(--border); }
+.digital-process-list h3 { font-size: 17px; }
+.digital-process-list p { max-width: 340px; margin-top: 12px; font-size: 13px; line-height: 1.8; }
+.digital-service-page main > .digital-proof { padding-bottom: 0; }
+.product-proof { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 24px; padding-block: 24px; border-block: 1px solid var(--border); }
+.product-proof .eyebrow { margin-bottom: 8px; font-size: 11px; }
+.product-proof h2 { font-size: 22px; line-height: 1.4; }
+.product-proof p { max-width: 600px; margin-top: 8px; font-size: 13px; line-height: 1.8; }
+.product-proof .text-link { white-space: nowrap; }
+.digital-service-page main > .digital-cta { padding-top: 0; padding-bottom: 32px; }
+.digital-cta-layout { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding-top: 40px; border-top: 1px solid var(--border); }
+.digital-cta-layout > div { max-width: 690px; }
+.digital-cta-layout h2 { font-size: clamp(30px, 3vw, 38px); line-height: 1.2; }
+.digital-cta-layout p { max-width: 570px; margin-top: 20px; font-size: 14px; line-height: 1.8; }
+.digital-cta-layout > .button { flex-shrink: 0; }
+.digital-related-link { display: inline-block; margin-top: 24px; }
+@media (max-width: 1100px) {
+  .digital-hero-grid, .digital-scope-grid { gap: 40px; }
+  .digital-service-page .service-hero-content h1 { font-size: 46px; }
+}
+@media (max-width: 900px) {
+  .digital-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .project-note { max-width: 600px; }
+  .project-note > p { font-size: 18px; }
+  .project-note small { max-width: none; margin-top: 12px; }
+  .digital-cta-layout { align-items: start; flex-direction: column; gap: 24px; }
+}
+@media (max-width: 767px) {
+  .digital-service-page main > section { padding-block: 48px; }
+  .digital-service-page main > .service-hero { padding-top: 128px; }
+  .digital-service-page .service-hero-content h1 { font-size: 38px; }
+  .digital-service-page .service-hero-content h1 br { display: none; }
+  .digital-scope-grid { grid-template-columns: 1fr; gap: 32px; }
+  .digital-section-intro h2 { font-size: 33px; }
+  .digital-section-intro > p { margin-top: 20px; }
+  .digital-process-list { grid-template-columns: 1fr; gap: 24px; }
+  .digital-process-list p { max-width: 500px; }
+  .digital-service-page main > .service-faq { padding-top: 0; }
+  .digital-service-page .service-faq-intro h2 { max-width: 360px; font-size: 30px; }
+  .product-proof { grid-template-columns: 36px 1fr; gap: 16px; }
+  .product-proof > img { width: 36px; height: 36px; }
+  .product-proof > .text-link { grid-column: 2; }
+  .product-proof h2 { font-size: 20px; }
+  .digital-cta-layout { padding-top: 32px; }
+}
+@media (max-width: 360px) {
+  .digital-service-page .service-hero-content h1 { font-size: 34px; }
+  .digital-hero-actions .button { font-size: 11px; }
+}
